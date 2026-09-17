@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Super Elements — Story Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;0,700;1,300&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#07090f; --ink-2:#0e1220; --ink-3:#161c2e;
+  --line:#2a3350; --line-2:#3d4870;
+  --paper:#e8e4da; --paper-dim:#9aa2b8; --paper-faint:#5d6784;
+  --brass:#c9a227;
+  --cell:46px; --gap:3px;
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--ink); color:var(--paper); font-family:var(--sans);
+  font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--paper)}
+button,select,input{font:inherit;color:inherit}
+
+/* ---------- masthead ---------- */
+header{padding:26px 22px 14px;border-bottom:1px solid var(--line);}
+h1{
+  font-family:var(--serif); font-weight:700; font-size:clamp(26px,4.4vw,42px);
+  margin:0; letter-spacing:-.01em;
+}
+h1 em{font-style:italic;font-weight:300;color:var(--paper-dim)}
+.sub{color:var(--paper-dim);max-width:62ch;margin:.5rem 0 0;font-size:14px}
+
+/* ---------- controls ---------- */
+.bar{
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end;
+  padding:14px 22px;border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:30;background:rgba(7,9,15,.96);
+  backdrop-filter:blur(6px);
+}
+.ctl{display:flex;flex-direction:column;gap:4px}
+.ctl>span{font-size:11.5px;color:var(--paper-faint);letter-spacing:.02em}
+select,input[type=search]{
+  background:var(--ink-2);border:1px solid var(--line);border-radius:2px;
+  padding:6px 8px;min-width:150px;
+}
+input[type=search]{min-width:210px}
+select:focus,input:focus,button:focus-visible{outline:2px solid var(--brass);outline-offset:1px}
+.seg{display:flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.seg button{
+  background:var(--ink-2);border:0;border-right:1px solid var(--line);
+  padding:6px 11px;cursor:pointer;font-size:13px;color:var(--paper-dim);
+}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed=true]{background:var(--brass);color:#141005;font-weight:600}
+.seg button:hover:not([aria-pressed=true]){background:var(--ink-3);color:var(--paper)}
+.yearwrap{min-width:230px;flex:1}
+.yearwrap input[type=range]{width:100%;accent-color:var(--brass)}
+.yearval{font-family:var(--serif);font-size:19px;font-variant-numeric:tabular-nums}
+.yearval small{font-family:var(--sans);font-size:11.5px;color:var(--paper-faint)}
+
+/* ---------- table ---------- */
+main{padding:20px 22px 90px;overflow-x:auto}
+.stage{transform-origin:center center;transition:transform .35s ease}
+.grid{display:grid;gap:var(--gap);width:max-content}
+.cell{
+  position:relative;width:var(--cell);height:var(--cell);
+  border:0;padding:0;cursor:pointer;border-radius:2px;
+  background:var(--coat);color:#fff;text-align:left;
+  display:flex;flex-direction:column;justify-content:space-between;
+  transition:opacity .25s,filter .15s,transform .1s;
+  overflow:hidden;
+}
+.cell:hover{filter:brightness(1.35);transform:translateY(-1px);z-index:5}
+.cell .z{font-size:9px;opacity:.7;padding:2px 0 0 3px;font-variant-numeric:tabular-nums}
+.cell .sym{
+  font-family:var(--serif);font-weight:700;font-size:16px;
+  padding:0 0 0 3px;margin-top:-3px;text-shadow:0 1px 2px rgba(0,0,0,.5)
+}
+.cell .val{font-size:8.5px;opacity:.85;padding:0 3px 2px;font-variant-numeric:tabular-nums;
+  white-space:nowrap;overflow:hidden}
+/* trim = CPK molecular-modelling colour, worn as piping */
+.cell::after{content:"";position:absolute;right:0;top:0;bottom:0;width:4px;background:var(--trim)}
+/* hair = emission colour, when documented */
+.cell .hair{position:absolute;right:7px;top:4px;width:6px;height:6px;border-radius:50%;
+  background:var(--hair);box-shadow:0 0 5px var(--hair)}
+.cell.haloed::before{content:"";position:absolute;left:3px;bottom:3px;width:9px;height:9px;
+  border-radius:50%;border:1.5px solid rgba(255,255,255,.85)}
+.cell.chained{box-shadow:inset 0 0 0 1px rgba(201,162,39,.75)}
+.cell[data-dim=true]{opacity:.12}
+.cell[data-dim=true]:hover{opacity:.4}
+.cell[aria-pressed=true]{outline:2px solid var(--paper);outline-offset:1px;z-index:6}
+.turned .cell .z,.turned .cell .sym,.turned .cell .val{transform:rotate(var(--counter));
+  transform-origin:center}
+.gaplabel{font-size:10px;color:var(--paper-faint);align-self:center;padding-left:4px}
+.seam{background:repeating-linear-gradient(90deg,var(--line) 0 4px,transparent 4px 8px);
+  border-radius:1px}
+
+/* ---------- list mode ---------- */
+table{border-collapse:collapse;font-size:13px;width:max-content}
+th,td{padding:5px 10px;border-bottom:1px solid var(--ink-3);text-align:left;white-space:nowrap}
+th{position:sticky;top:0;background:var(--ink-2);cursor:pointer;font-weight:600;
+  border-bottom:1px solid var(--line);z-index:2}
+th:hover{color:var(--brass)}
+th[data-active]{color:var(--brass)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr:hover{background:var(--ink-2)}
+tbody tr{cursor:pointer}
+.chip{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;
+  vertical-align:-1px}
+
+/* ---------- detail ---------- */
+.panel{
+  position:fixed;right:0;top:0;bottom:0;width:min(430px,100%);
+  background:var(--ink-2);border-left:1px solid var(--line-2);
+  transform:translateX(100%);transition:transform .28s ease;z-index:60;
+  overflow-y:auto;padding:0 0 40px;
+}
+.panel[data-open=true]{transform:none;box-shadow:-18px 0 50px rgba(0,0,0,.6)}
+.phead{padding:20px 22px;position:relative}
+.phead .card{
+  display:flex;gap:14px;align-items:flex-start;
+}
+.bigsym{
+  width:82px;height:82px;flex:0 0 82px;border-radius:3px;position:relative;
+  display:flex;flex-direction:column;justify-content:space-between;padding:5px 6px;
+}
+.bigsym b{font-family:var(--serif);font-size:34px;line-height:1}
+.bigsym span{font-size:11px;opacity:.8;font-variant-numeric:tabular-nums}
+.bigsym::after{content:"";position:absolute;right:0;top:0;bottom:0;width:7px;background:var(--trim)}
+.pname{font-family:var(--serif);font-size:27px;margin:0;line-height:1.1}
+.pmeta{color:var(--paper-dim);font-size:13px;margin:.35rem 0 0}
+.close{position:absolute;right:14px;top:14px;background:none;border:0;cursor:pointer;
+  color:var(--paper-dim);font-size:22px;line-height:1;padding:4px 8px}
+.close:hover{color:var(--paper)}
+.sect{padding:15px 22px;border-top:1px solid var(--ink-3)}
+.sect h3{font-family:var(--serif);font-weight:500;font-size:16px;margin:0 0 9px;
+  color:var(--paper)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:0;font-size:13.5px}
+dt{color:var(--paper-faint)}
+dd{margin:0;font-variant-numeric:tabular-nums}
+.haloring{width:74px;height:74px;border-radius:50%;margin:10px auto 4px;
+  -webkit-mask:radial-gradient(circle,transparent 56%,#000 58%);
+  mask:radial-gradient(circle,transparent 56%,#000 58%)}
+.swatches{display:flex;gap:9px;margin-bottom:9px}
+.sw{flex:1;border-radius:2px;padding:7px 8px;font-size:11px;line-height:1.35;min-height:52px}
+.sw b{display:block;font-size:12px}
+.note{font-size:12.5px;color:var(--paper-dim);margin:7px 0 0}
+.unruled{color:var(--brass);font-size:12px;margin-top:7px}
+.use{border-left:2px solid var(--line-2);padding:1px 0 1px 11px;margin-bottom:11px}
+.use b{font-weight:600}
+.use .when{color:var(--paper-faint);font-size:12px}
+.opt{display:flex;gap:9px;align-items:flex-start;margin:7px 0}
+.opt .chip{width:14px;height:14px;flex:0 0 14px;margin-top:2px}
+.person.ignored{border-left-color:#A46A21}
+.person.punished{border-left-color:#C42034}
+.person\.died-of-it,.person.died-of-it{border-left-color:#6E1030}
+.person.honoured{border-left-color:#3ADB5C}
+.facet.salvation{border-left-color:#3ADB5C}
+.facet.disaster{border-left-color:#C42034}
+.facet.harm_med{border-left-color:#8E2B3A}
+.facet.help_med{border-left-color:#2AD8C8}
+.facet.pollution{border-left-color:#A46A21}
+.facet.music,.facet.art,.facet.adornment{border-left-color:#C9A227}
+.use .kind{font-size:10px;color:var(--brass);letter-spacing:.03em;margin-left:5px}
+.use .attest{font-size:11.5px;color:var(--paper-faint);margin-top:3px;font-style:italic}
+.use .who{font-size:12.5px;color:var(--paper-dim)}
+.slot{
+  border:1px dashed var(--line-2);border-radius:2px;padding:12px;text-align:center;
+  color:var(--paper-faint);font-size:12.5px
+}
+.slot img{max-width:100%;border-radius:2px;display:block}
+.plinks{display:flex;gap:9px;flex-wrap:wrap;margin-top:10px}
+.plinks a{
+  font-size:12.5px;border:1px solid var(--line-2);border-radius:2px;
+  padding:5px 10px;text-decoration:none;color:var(--paper-dim)
+}
+.plinks a:hover{border-color:var(--brass);color:var(--brass)}
+
+/* ---------- legend ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:5px 14px;padding:14px 22px;border-top:1px solid var(--line);
+  font-size:12px;color:var(--paper-dim)}
+.legend span{display:flex;align-items:center;gap:6px}
+.scalebar{height:9px;width:130px;border-radius:2px}
+.count{color:var(--paper-faint);font-size:12.5px;padding:0 22px 8px}
+
+@media (max-width:760px){
+  :root{--cell:34px;--gap:2px}
+  .cell .val{display:none}
+  main{padding:14px 12px 80px}
+  .bar{padding:11px 12px}
+  header{padding:20px 14px 12px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.sym.masked,b.masked{font-family:"Spectral",Georgia,serif;font-weight:700;font-style:italic}
+.pname .pelem{font-weight:300;opacity:.75}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Super Elements — Story Engine <em>— all 118, and where they came from</em></h1>
+  <p class="sub">Every element is a character. The coat is the family, the piping is the
+  molecular-modelling colour, and the light is what it gives off when it burns. Click any
+  one of them.</p>
+</header>
+
+<div class="bar">
+  <div class="ctl"><span>View</span>
+    <div class="seg" id="viewseg">
+      <button data-v="standard" aria-pressed="true">Standard</button>
+      <button data-v="long">Unfolded</button>
+      <button data-v="fold">Folded</button>
+      <button data-v="list">List</button>
+    </div>
+  </div>
+  <div class="ctl"><span>Colour by</span>
+    <select id="colorby">
+      <option value="coat">Family — the coat</option>
+      <option value="trim">Molecular model — the piping</option>
+      <option value="hair">Emission — the hair</option>
+      <option value="melt">Melting point</option>
+      <option value="boil">Boiling point</option>
+      <option value="en">Electronegativity</option>
+      <option value="density">Density</option>
+      <option value="crust">Abundance on Earth</option>
+      <option value="universe">Abundance in the universe</option>
+      <option value="price">Price per kilo</option>
+      <option value="supply_risk">Supply risk</option>
+      <option value="year">Year found</option>
+      <option value="condition">Named in a human illness</option>
+      <option value="slots">How much of her is written</option>
+      <option value="facets">Facets mapped</option>
+      <option value="doubted">Someone was doubted for her</option>
+    </select>
+  </div>
+  <div class="ctl"><span>Roll the table</span>
+    <input type="range" id="roll" min="0" max="17" value="0" style="width:130px">
+  </div>
+  <div class="ctl"><span>Turn it</span>
+    <div class="seg" id="turnseg">
+      <button data-t="0" aria-pressed="true">0°</button>
+      <button data-t="90">90°</button>
+      <button data-t="180">180°</button>
+    </div>
+  </div>
+  <div class="ctl yearwrap"><span>What was known by this year</span>
+    <div class="yearval"><span id="yearlabel">2026</span> <small id="yearcount"></small></div>
+    <input type="range" id="year" min="1650" max="2026" value="2026" step="1">
+  </div>
+  <div class="ctl"><span>Search</span>
+    <input type="search" id="q" placeholder="chlorine, Curie, water, 1774…">
+  </div>
+</div>
+
+<main>
+  <div class="stage" id="stage"><div class="grid" id="grid"></div></div>
+  <div id="listwrap" hidden></div>
+</main>
+
+<div class="count" id="count"></div>
+<div class="legend" id="legend"></div>
+
+<aside class="panel" id="panel" aria-live="polite"></aside>
+
+<script src="data.js"></script>
+<script>
+// Masked-symbol rule (2026-09-16): symbols whose letters come from a name other than the English one.
+// These are the girls who hide their faces. Bold italic serif on every table; plain for the rest.
+const MASKED = new Set(["Na","K","Fe","Cu","Ag","Sn","Sb","W","Au","Hg","Pb"]);
+</script>
+<script>
+const EL = SE.elements, BY = {}; EL.forEach(e => BY[e.symbol] = e);
+const $ = s => document.querySelector(s);
+const grid = $('#grid'), stage = $('#stage'), panel = $('#panel');
+
+let state = { view:'standard', color:'coat', roll:0, turn:0, year:2026, q:'',
+              sel:null, sortKey:'z', sortDir:1 };
+
+/* ---------- named colour → hex, for the emission dots ---------- */
+const hairHex = e => e.hair_hex || null;
+
+/* ---------- placement ---------- */
+// f-strip = 57-70 and 89-102; Lu and Lr take group 3, which keeps Sc/Y/Lu/Lr aligned
+// (the 2021 IUPAC-favoured arrangement).
+const isF = e => (e.z >= 57 && e.z <= 70) || (e.z >= 89 && e.z <= 102);
+const grp = e => (e.z === 71 || e.z === 103) ? 3 : e.group;
+function place(e, view, roll){
+  let col, row = e.period, g = grp(e);
+  if (view === 'long'){                        // 32 wide: the f-strip back in its gap
+    if (isF(e)) return [3 + (e.z - (e.z < 89 ? 57 : 89)), row];
+    return [g <= 2 ? g : g + 14, row];
+  }
+  if (view === 'fold'){                        // d and f fold under; s meets p at the seam
+    if (isF(e) || e.block === 'd' || g == null || (g > 2 && g < 13)) return null;
+    return [g <= 2 ? g : g - 9, row];          // 13..18 -> 4..9, seam at col 3
+  }
+  if (isF(e)) return [3 + (e.z - (e.z < 89 ? 57 : 89)), e.z < 89 ? 9 : 10];
+  col = g;
+  if (roll) col = ((col - 1 + roll) % 18) + 1; // turn the barrel: 18 comes round to 1
+  return [col, row];
+}
+
+/* ---------- colour scales ---------- */
+const LOGKEYS = new Set(['crust','sea','universe','price']);
+function scaleFor(key){
+  const vals = EL.map(e => e[key]).filter(v => typeof v === 'number' && (!LOGKEYS.has(key) || v>0));
+  if (!vals.length) return null;
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const log = LOGKEYS.has(key);
+  if (log){ lo = Math.log10(lo); hi = Math.log10(hi); }
+  return { lo, hi, log };
+}
+// cool → hot ramp, deliberately not a rainbow so it never fights the coat canon
+function ramp(t){
+  t = Math.max(0, Math.min(1, t));
+  const stops = [[16,26,58],[26,86,140],[46,158,152],[214,182,64],[224,96,44],[196,32,52]];
+  const x = t * (stops.length - 1), i = Math.floor(x), f = x - i;
+  const a = stops[i], b = stops[Math.min(i+1, stops.length-1)];
+  return `rgb(${Math.round(a[0]+(b[0]-a[0])*f)},${Math.round(a[1]+(b[1]-a[1])*f)},${Math.round(a[2]+(b[2]-a[2])*f)})`;
+}
+function fillFor(e, key, sc){
+  if (key === 'condition') return e.condition ? '#8E2B3A' : '#171d2e';
+  if (key === 'slots') return ramp(e.slots_filled / 9);
+  if (key === 'doubted') {
+    const n = e.people.filter(p => ['ignored','punished','died of it'].includes(p.reception)).length;
+    return n ? ramp(Math.min(n,4)/4) : (e.people.length ? '#1d2740' : '#171d2e');
+  }
+  if (key === 'facets') return Object.keys(e.facets).length
+    ? ramp(Object.keys(e.facets).length / 12) : '#171d2e';
+  if (key === 'coat') return e.coat_hex;
+  if (key === 'trim') return e.trim_hex || '#444';
+  if (key === 'hair') return hairHex(e) || '#1c2236';
+  const v = e[key];
+  if (typeof v !== 'number' || (LOGKEYS.has(key) && v <= 0)) return '#171d2e';
+  const x = sc.log ? Math.log10(v) : v;
+  return ramp((x - sc.lo) / (sc.hi - sc.lo || 1));
+}
+const UNITS = { melt:'K', boil:'K', en:'', density:'g/cm³', crust:'mg/kg', sea:'mg/L',
+                universe:'', price:'$/kg', supply_risk:'/10', year:'' };
+function shortVal(e, key){
+  const v = e[key];
+  if (key==='year') return e.ancient ? 'anc.' : (v ?? '—');
+  if (key==='hair') return e.hair_options.length>1 ? '●●' : '●';
+  if (key==='condition') return e.condition ? '●' : '';
+  if (key==='slots') return e.slots_filled + '/9';
+  if (key==='facets') return Object.keys(e.facets).length || '';
+  if (key==='doubted') return e.people.filter(p =>
+    ['ignored','punished','died of it'].includes(p.reception)).length || '';
+  if (typeof v !== 'number') return '—';
+  if (Math.abs(v) >= 10000 || (v !== 0 && Math.abs(v) < 0.01)) return v.toExponential(0);
+  return (Math.round(v*100)/100).toString();
+}
+
+/* ---------- filter ---------- */
+function known(e){ return e.ancient || (e.year != null && e.year <= state.year); }
+function hit(e){
+  const q = state.q.trim().toLowerCase();
+  if (!q) return true;
+  return [e.name,e.symbol,String(e.z),e.coat,e.series,e.mentor,e.where,e.uses,
+          e.sources,e.nature_team,e.hair,String(e.year),e.name_origin,e.condition,e.costume,
+          e.hair_options.map(o=>o.color+' '+o.detail).join(' '),
+          Object.values(e.facets).join(' '),
+          e.people.map(p=>p.name+' '+p.did+' '+p.place).join(' '),
+          (e.mentor_chain||[]).map(m=>[m.name,m.culture,m.era,m.place,m.did].join(' ')).join(' ')]
+         .join(' ').toLowerCase().includes(q);
+}
+
+/* ---------- render: table ---------- */
+function renderGrid(){
+  const sc = scaleFor(state.color);
+  grid.innerHTML = '';
+  const cols = state.view==='long' ? 32 : (state.view==='fold' ? 9 : 18);
+  grid.style.gridTemplateColumns = `repeat(${cols},var(--cell))`;
+  let shown = 0;
+
+  if (state.view === 'fold'){
+    const seam = document.createElement('div');
+    seam.className = 'seam'; seam.style.gridColumn = '3'; seam.style.gridRow = '1 / span 7';
+    grid.appendChild(seam);
+  }
+
+  EL.forEach(e => {
+    const p = place(e, state.view, state.roll);
+    if (!p) return;
+    const b = document.createElement('button');
+    b.className = 'cell';
+    b.style.gridColumn = p[0]; b.style.gridRow = p[1];
+    b.style.setProperty('--coat', fillFor(e, state.color, sc));
+    b.style.setProperty('--trim', e.trim_hex || 'transparent');
+    b.setAttribute('aria-pressed', state.sel === e.symbol);
+    const dim = !known(e) || !hit(e);
+    b.dataset.dim = dim; if (!dim) shown++;
+    b.title = `${e.z} ${e.name}`;
+    b.innerHTML = `<span class="z">${e.z}</span><span class="sym${MASKED.has(e.symbol)?' masked':''}">${e.symbol}</span>
+      <span class="val">${shortVal(e, state.color)}</span>`;
+    if (e.mentor_chain.length) b.classList.add('chained');
+    if (e.halo) b.classList.add('haloed');
+    const hh = hairHex(e);
+    if (hh && state.color !== 'hair'){
+      const d = document.createElement('span'); d.className='hair';
+      d.style.setProperty('--hair', hh); b.appendChild(d);
+    }
+    b.onclick = () => open(e.symbol);
+    grid.appendChild(b);
+  });
+
+  if (state.view === 'standard' && !state.roll){
+    const g = document.createElement('div');
+    g.className='gaplabel'; g.style.gridColumn='3 / span 10'; g.style.gridRow='8';
+    g.textContent = 'the two rows below belong inside the gap above';
+    grid.appendChild(g);
+  }
+  $('#count').textContent =
+    `${shown} of 118 showing${state.q ? ` · matching “${state.q}”` : ''}` +
+    `${state.year < 2026 ? ` · as the table stood in ${state.year}` : ''}`;
+}
+
+/* ---------- render: list ---------- */
+const COLS = [
+  ['z','#','num'],['symbol','Symbol',''],['name','Name',''],['coat','Family',''],
+  ['year','Found','num'],['mentor','Found by',''],['where','Where',''],
+  ['melt','Melts (K)','num'],['boil','Boils (K)','num'],['en','Electroneg.','num'],
+  ['density','Density','num'],['crust','Earth crust (mg/kg)','num'],
+  ['sea','Sea (mg/L)','num'],['universe','Universe (mass frac.)','num'],
+  ['price','Price ($/kg)','num'],['supply_risk','Supply risk','num'],['hair','Emission','']
+];
+function renderList(){
+  const rows = EL.filter(e => known(e) && hit(e)).sort((a,b) => {
+    const k = state.sortKey; let x = a[k], y = b[k];
+    if (x == null) return 1; if (y == null) return -1;
+    if (typeof x === 'string') return x.localeCompare(y) * state.sortDir;
+    return (x - y) * state.sortDir;
+  });
+  const th = COLS.map(c =>
+    `<th class="${c[2]}" data-k="${c[0]}" ${state.sortKey===c[0]?'data-active':''}>${c[1]}${
+      state.sortKey===c[0] ? (state.sortDir>0?' ↑':' ↓') : ''}</th>`).join('');
+  const tb = rows.map(e => '<tr data-s="'+e.symbol+'">' + COLS.map(c => {
+    let v = e[c[0]];
+    if (c[0]==='year' && e.ancient) v = 'antiquity';
+    if (c[0]==='symbol') v = `<span class="chip" style="background:${e.coat_hex}"></span>${v}`;
+    if (v == null || v === '') v = '—';
+    if (typeof v === 'number' && (Math.abs(v)>=10000 || (v!==0 && Math.abs(v)<0.001)))
+      v = v.toExponential(1);
+    return `<td class="${c[2]}">${v}</td>`;
+  }).join('') + '</tr>').join('');
+  $('#listwrap').innerHTML = `<table><thead><tr>${th}</tr></thead><tbody>${tb}</tbody></table>`;
+  $('#listwrap').querySelectorAll('th').forEach(h => h.onclick = () => {
+    const k = h.dataset.k;
+    state.sortDir = state.sortKey === k ? -state.sortDir : 1;
+    state.sortKey = k; renderList();
+  });
+  $('#listwrap').querySelectorAll('tr[data-s]').forEach(r =>
+    r.onclick = () => open(r.dataset.s));
+  $('#count').textContent = `${rows.length} of 118 showing · sorted by ${
+    COLS.find(c=>c[0]===state.sortKey)[1].toLowerCase()}`;
+}
+
+/* ---------- detail panel ---------- */
+const dark = h => h ? '#000' : 'var(--paper-dim)';
+const fmt = (v, u) => v == null ? '—' :
+  (typeof v === 'number'
+    ? (Math.abs(v)>=10000||(v!==0&&Math.abs(v)<0.001) ? v.toExponential(2)
+       : String(Math.round(v*1000)/1000)) + (u ? ' ' + u : '')
+    : v);
+function easeOfGetting(e){
+  const c = e.crust, r = e.supply_risk, p = e.price;
+  if (c == null) return 'Not found in the crust in any measurable amount.';
+  let s;
+  if (c > 10000) s = 'Everywhere. You are standing on it.';
+  else if (c > 100) s = 'Common. Cheap to win from ordinary rock or seawater.';
+  else if (c > 1) s = 'Uncommon, but mined at scale.';
+  else if (c > 0.01) s = 'Scarce. Usually a by-product of mining something else.';
+  else s = 'Rare enough that most of it ever isolated would fit in a room.';
+  if (p != null) s += ` About ${p < 1 ? '$'+p.toFixed(3) : '$'+Math.round(p).toLocaleString()} a kilo.`;
+  if (r != null) s += ` Supply risk ${r}/10.`;
+  return s;
+}
+function open(sym){
+  const e = BY[sym]; state.sel = sym;
+  const hh = hairHex(e);
+  const teams = (e.use_teams||[]).map(u => `<div class="use">
+      <b>${u[0]}</b> <span class="when">— ${u[2]}</span>
+      <div class="who">Team: ${u[1]}</div></div>`).join('');
+  panel.innerHTML = `
+  <div class="phead">
+    <button class="close" aria-label="Close">×</button>
+    <div class="card">
+      <div class="bigsym" style="background:${e.coat_hex};--trim:${e.trim_hex||'#000'}">
+        <span>${e.z}</span><b class="${MASKED.has(e.symbol)?'masked':''}">${e.symbol}</b><span>${fmt(e.mass)}</span>
+      </div>
+      <div>
+        <h2 class="pname">${e.character ? `${e.character} <span class="pelem">· ${e.name}</span>` : e.name}</h2>
+        <p class="pmeta">${e.coat} · period ${e.period} · ${e.block}-block${
+          e.radioactive ? ' · radioactive' : ''}</p>
+        <p class="pmeta">${e.name_origin || ''}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sect">
+    <h3>How she is dressed</h3>
+    <div class="swatches">
+      <div class="sw" style="background:${e.coat_hex}"><b>Coat</b>${e.coat_word}</div>
+      <div class="sw" style="background:${e.trim_hex||'#333'};color:#000"><b>Trim</b>${e.trim_hex||'—'}</div>
+      <div class="sw" style="background:${hh||'#171d2e'};color:${dark(hh)}">
+        <b>Hair</b>${e.hair || 'unruled'}</div>
+      ${e.halo ? `<div class="sw halo" style="background:linear-gradient(135deg,${
+        e.halo.lines.join(',')});color:#000"><b>Halo</b>${e.halo.name}</div>` : ''}
+    </div>
+    ${e.halo ? `<div class="haloring" style="background:conic-gradient(${
+      e.halo.lines.concat([e.halo.lines[0]]).join(',')})"></div>
+      <p class="note"><b>The halo is not the hair.</b> ${e.halo.basis}.${
+        e.halo.status==='proposed' ? ' Proposed — check NIST before ruling.' : ''}</p>
+      ${e.halo.note ? `<p class="note" style="color:var(--paper)">${e.halo.note}</p>` : ''}
+      <p class="note">She is a halogen, so she is read with a spectroscope off the halo.
+      Nobody burns her hair.</p>` : ''}
+    ${e.hair_options.map((o,i) => `
+      <div class="opt">
+        <i class="chip" style="background:${o.hex}"></i>
+        <div><b>${o.color}</b> <span class="kind">${o.basis}</span>${
+          o.status==='proposed' ? ' <span class="kind" style="color:#ff9d5c">proposed</span>' : ''}
+          ${o.detail ? `<div class="attest">${o.detail}</div>` : ''}</div>
+      </div>`).join('')}
+    ${e.hair_options.length > 1
+      ? `<p class="note">${e.hair_options.length} true colours. Which one she wears can
+         depend on what she is doing, or what century it is.</p>` : ''}
+    ${e.costume ? `<p class="note" style="color:var(--paper)">${e.costume}</p>` : ''}
+  </div>
+
+  <div class="sect">
+    <h3>${e.mentor_chain.length ? 'Her mentors, in order' : 'Her mentor'}</h3>
+    ${e.mentor_chain.length ? e.mentor_chain.map(m => `
+      <div class="use">
+        <b>${m.name}</b> <span class="kind">${m.kind}</span>
+        <div class="when">${m.culture} · ${m.era}${m.place && m.place!=='—' ? ' · '+m.place : ''}</div>
+        <div class="who">${m.did}</div>
+        <div class="attest">${m.attest}</div>
+        ${m.note ? `<div class="attest" style="color:var(--brass)">${m.note}</div>` : ''}
+      </div>`).join('') : `<dl>
+      <dt>Found by</dt><dd>${e.mentor || '—'}</dd>
+      <dt>Year</dt><dd>${e.year ?? '—'}</dd>
+      <dt>Where</dt><dd>${e.where || '—'}</dd></dl>`}
+    ${e.mentor_note ? `<p class="note">${e.mentor_note}</p>` : ''}
+    <p class="note">${e.mentor_chain.length
+      ? 'No single person found her, so she has a line of them. The uniform takes '
+        + 'its cut from whichever one the story is standing in.'
+      : 'The place and the year set the cut of her uniform.'}</p>
+  </div>
+
+  <div class="sect">
+    <h3>Team in nature</h3>
+    <p class="note" style="color:var(--paper)">${e.nature_team || e.sources || '—'}</p>
+  </div>
+
+  ${teams ? `<div class="sect"><h3>What she was used for, in order</h3>${teams}
+    <p class="note">${e.uses||''}</p></div>`
+   : `<div class="sect"><h3>Uses</h3><p class="note" style="color:var(--paper)">${
+      e.uses || '—'}</p><p class="unruled">Use timeline and use-teams not yet written.</p></div>`}
+
+  <div class="sect">
+    <h3>How much there is, and how hard she is to get</h3>
+    <dl>
+      <dt>Earth's crust</dt><dd>${fmt(e.crust,'mg/kg')}</dd>
+      <dt>Seawater</dt><dd>${fmt(e.sea,'mg/L')}</dd>
+      <dt>Universe</dt><dd>${e.universe!=null ? e.universe.toExponential(2)+' by mass' : '—'}</dd>
+      <dt>Price</dt><dd>${fmt(e.price,'$/kg')}</dd>
+      <dt>Supply risk</dt><dd>${fmt(e.supply_risk,'/10')}</dd>
+      <dt>Comes from</dt><dd>${e.producers || '—'}</dd>
+    </dl>
+    <p class="note">${easeOfGetting(e)}</p>
+  </div>
+
+  ${e.place_nature || e.place_discovery ? `<div class="sect">
+    <h3>Her three places</h3>
+    ${[['Found by a person at', e.place_discovery],
+       ['Found in the ground at', e.place_nature],
+       ['Got from, today', e.place_industrial]]
+      .filter(p => p[1]).map(p => `
+        <div class="use"><b>${p[0]}</b>
+          <div class="who">${p[1][0]}</div>
+          ${p[1][1] != null ? `<div class="attest"><a href="https://www.openstreetmap.org/?mlat=${
+            p[1][1]}&mlon=${p[1][2]}#map=7/${p[1][1]}/${p[1][2]}" target="_blank"
+            rel="noopener">${p[1][1].toFixed(2)}, ${p[1][2].toFixed(2)}</a></div>` : ''}
+        </div>`).join('')}
+  </div>` : ''}
+
+  ${e.source_timeline.length ? `<div class="sect">
+    <h3>Where the world has got her, over time</h3>
+    ${e.source_timeline.map(t => `<div class="use">
+      <b>${t[0]}</b><div class="who">${t[1]}</div></div>`).join('')}
+  </div>` : ''}
+
+  ${e.people.length ? `<div class="sect">
+    <h3>The people</h3>
+    ${e.people.map(p => `<div class="use person ${p.reception.replace(/ /g,'-')}">
+      <b>${p.name}</b> <span class="kind">${p.role}</span>
+      <div class="when">${p.year < 0 ? Math.abs(p.year)+' BCE' : p.year} · ${p.place}</div>
+      <div class="who">${p.did}</div>
+      <div class="attest">${p.reception}</div></div>`).join('')}
+    <p class="note">${(() => {
+      const n = e.people.filter(p => ['ignored','punished','died of it'].includes(p.reception)).length;
+      return n ? `${n} of ${e.people.length} were ignored, punished, or killed by it.`
+               : 'All of them were honoured. That is unusual.';})()}</p>
+  </div>` : ''}
+
+  ${Object.keys(e.facets).length ? `<div class="sect">
+    <h3>What she is good at, and what she has done</h3>
+    ${[['salvation','What she is owed for'],['disaster','The disaster'],
+       ['harm_med','How she harms a body'],['help_med','How she heals one'],
+       ['structural','What she builds'],['chemical','In industry'],
+       ['agricultural','In the field'],['adornment','Worn'],
+       ['art','In art'],['music','In music'],['tech','In technology'],
+       ['pollution','How she gets loose']]
+      .filter(f => e.facets[f[0]]).map(f => `
+        <div class="use facet ${f[0]}"><b>${f[1]}</b>
+          <div class="who">${e.facets[f[0]]}</div></div>`).join('')}
+  </div>` : ''}
+
+  ${e.condition ? `<div class="sect">
+    <h3>What she does to a body</h3>
+    <p class="note" style="color:var(--paper)">${e.condition}</p>
+  </div>` : ''}
+
+  <div class="sect">
+    <h3>Numbers on her card</h3>
+    <dl>
+      <dt>Melts</dt><dd>${fmt(e.melt,'K')}</dd>
+      <dt>Boils</dt><dd>${fmt(e.boil,'K')}</dd>
+      <dt>Density</dt><dd>${fmt(e.density,'g/cm³')}</dd>
+      <dt>Electronegativity</dt><dd>${fmt(e.en)}</dd>
+      <dt>Shell</dt><dd>${e.econf}</dd>
+      <dt>Outer electrons</dt><dd>${e.nvalence}</dd>
+      <dt>Oxidation</dt><dd>${(e.oxidation||[]).join(', ') || '—'}</dd>
+    </dl>
+  </div>
+
+  <div class="sect">
+    <h3>What is still unwritten</h3>
+    ${e.slots_open.length ? `<p class="note" style="color:var(--paper)">${
+      e.slots_open.map(k => ({
+        character:'She has no name yet.',
+        hair:'Her hair has an option still marked proposed.',
+        mentor:'No mentor on file.',
+        uses:'No use timeline — what she was used for, and with whom.',
+        places:'Her three places are not filled in.',
+        source:'No record of where the world has got her over time.',
+        condition:'No human condition on file. There may genuinely be none.',
+        facets:'Her twelve facets are not mapped — what she heals, builds, poisons, plays.',
+        people:'The scientists after the discoverer are not listed.'
+      })[k]).join(' ')}</p>
+      <p class="unruled">${e.slots_open.length} of 9 slots open. Each one is a story
+      that has not been written.</p>`
+     : `<p class="note" style="color:var(--paper)">All seven filled. She is ready to
+        be written.</p>`}
+  </div>
+
+  <div class="sect">
+    <h3>Her picture</h3>
+    <div class="slot" id="charslot">Drop character art at
+      <code>art/${e.symbol}.png</code> and it appears here.</div>
+    <div class="plinks">
+      <a href="${e.wiki}" target="_blank" rel="noopener">Wikipedia</a>
+      <a href="https://commons.wikimedia.org/w/index.php?search=${encodeURIComponent(e.name+' element sample')}"
+         target="_blank" rel="noopener">Photograph of the element</a>
+      <a href="https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=${e.symbol}"
+         target="_blank" rel="noopener">Its emission lines (NIST)</a>
+    </div>
+  </div>`;
+  const img = new Image();
+  img.onload = () => { const s = panel.querySelector('#charslot');
+    if (s) { s.innerHTML=''; s.appendChild(img); } };
+  img.src = `art/${e.symbol}.png`;
+  panel.querySelector('.close').onclick = close;
+  panel.dataset.open = 'true';
+  draw();
+}
+function close(){ panel.dataset.open='false'; state.sel=null; draw(); }
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape') close(); });
+
+/* ---------- legend ---------- */
+function renderLegend(){
+  const L = $('#legend'), k = state.color;
+  if (k === 'doubted'){
+    const tot = EL.reduce((a,e)=>a+e.people.filter(p =>
+      ['ignored','punished','died of it'].includes(p.reception)).length,0);
+    const bar = `linear-gradient(90deg,${[0,.33,.66,1].map(t=>ramp(t)).join(',')})`;
+    L.innerHTML = `<span>1 person</span><span class="scalebar" style="background:${bar}"></span>
+      <span>4 or more</span><span style="color:var(--brass)">${tot} people ignored,
+      punished, or killed for what they found</span>`;
+  } else if (k === 'facets'){
+    const n = EL.filter(e => Object.keys(e.facets).length).length;
+    const bar = `linear-gradient(90deg,${[0,.3,.6,1].map(t=>ramp(t)).join(',')})`;
+    L.innerHTML = `<span>1 facet</span><span class="scalebar" style="background:${bar}"></span>
+      <span>12 facets</span><span style="color:var(--brass)">${n} elements mapped, ${
+      118-n} to go</span>`;
+  } else if (k === 'slots'){
+    const bar = `linear-gradient(90deg,${[0,.2,.4,.6,.8,1].map(t=>ramp(t)).join(',')})`;
+    const open = EL.reduce((a,e) => a + e.slots_open.length, 0);
+    L.innerHTML = `<span>nothing written</span>
+      <span class="scalebar" style="background:${bar}"></span>
+      <span>all seven filled</span>
+      <span style="color:var(--brass)">${open} slots still open</span>`;
+  } else if (k === 'condition'){
+    L.innerHTML = '<span><i class="chip" style="background:#8E2B3A"></i>' +
+      'has a named human condition — 41 of them do</span>';
+  } else if (k === 'coat'){
+    const seen = new Map(); EL.forEach(e => seen.set(e.coat, e.coat_hex));
+    L.innerHTML = [...seen].map(([n,h]) =>
+      `<span><i class="chip" style="background:${h}"></i>${n}</span>`).join('');
+  } else if (k === 'trim'){
+    L.innerHTML = '<span>Jmol extended CPK colours — the piping on the uniform, ' +
+      'so a character matches the ball in a molecular model.</span>';
+  } else if (k === 'hair'){
+    L.innerHTML = '<span>Documented flame, discharge and emission colours only. ' +
+      'Dark cells are unruled — nothing has been invented for them.</span>';
+  } else {
+    const sc = scaleFor(k); if (!sc) { L.innerHTML=''; return; }
+    const bar = `linear-gradient(90deg,${[0,.2,.4,.6,.8,1].map(t=>ramp(t)).join(',')})`;
+    const f = v => sc.log ? Math.pow(10,v).toExponential(1) : Math.round(v*100)/100;
+    L.innerHTML = `<span>${f(sc.lo)}</span>
+      <span class="scalebar" style="background:${bar}"></span>
+      <span>${f(sc.hi)} ${UNITS[k]||''}${sc.log?' · logarithmic':''}</span>
+      <span style="color:var(--paper-faint)">grey = no value on file</span>`;
+  }
+}
+
+/* ---------- draw ---------- */
+function draw(){
+  const list = state.view === 'list';
+  $('#listwrap').hidden = !list; stage.hidden = list;
+  if (list) renderList(); else renderGrid();
+  renderLegend();
+  const t = state.turn;
+  stage.classList.toggle('turned', !!t);
+  document.documentElement.style.setProperty('--counter', `${-t}deg`);
+  stage.style.transform = t ? `rotate(${t}deg)` : '';
+  requestAnimationFrame(() => {
+    const inner = list ? null : grid;
+    if (!inner) return;
+    const w = inner.scrollWidth, h = inner.scrollHeight;
+    stage.style.width  = (t === 90 ? h : w) + 'px';
+    stage.style.height = (t === 90 ? w : h) + 'px';
+  });
+}
+
+/* ---------- wiring ---------- */
+$('#viewseg').onclick = ev => { const b = ev.target.closest('button'); if(!b) return;
+  state.view = b.dataset.v;
+  [...ev.currentTarget.children].forEach(x => x.setAttribute('aria-pressed', x===b));
+  draw(); };
+$('#turnseg').onclick = ev => { const b = ev.target.closest('button'); if(!b) return;
+  state.turn = +b.dataset.t;
+  [...ev.currentTarget.children].forEach(x => x.setAttribute('aria-pressed', x===b));
+  draw(); };
+$('#colorby').onchange = e => { state.color = e.target.value; draw(); };
+$('#roll').oninput = e => { state.roll = +e.target.value; if(state.view!=='standard'){
+  state.view='standard'; [...$('#viewseg').children].forEach(x =>
+    x.setAttribute('aria-pressed', x.dataset.v==='standard')); } draw(); };
+$('#year').oninput = e => {
+  state.year = +e.target.value; $('#yearlabel').textContent = state.year;
+  const n = EL.filter(known).length;
+  $('#yearcount').textContent = state.year < 2026 ? `— ${n} elements named` : '— all of them';
+  draw(); };
+$('#q').oninput = e => { state.q = e.target.value; draw(); };
+
+draw();
+</script>
+</body>
+</html>
