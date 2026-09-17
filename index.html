@@ -589,6 +589,25 @@ function open(sym){
         </div>`).join('')}
   </div>` : ''}
 
+  ${Object.keys(e.bases).length ? `<div class="sect">
+    <h3>Her home bases, in time</h3>
+    ${[['discovery','Where she was found'],['research','Where her work is centred'],['nature','Where she lives in nature']]
+      .filter(b => e.bases[b[0]]).map(b => `
+        <div class="use"><b>${b[1]}</b> <span class="kind">${e.bases[b[0]].when}</span>
+          <div class="when">${e.bases[b[0]].where}</div>
+          <div class="who">${e.bases[b[0]].note}</div></div>`).join('')}
+    <p class="note">She reports to ${SE.meta.hq.name}, ${SE.meta.hq.where}. ${SE.meta.hq.note}</p>
+  </div>` : ''}
+
+  ${Object.keys(e.adventures).length ? `<div class="sect">
+    <h3>Her two adventures</h3>
+    ${[['lab','Practice · the lab'],['field','For real · the field']]
+      .filter(a => e.adventures[a[0]]).map(a => `
+        <div class="use"><b>${e.adventures[a[0]].title}</b> <span class="kind">${a[1]}</span>
+          <div class="when">${e.adventures[a[0]].when} · ${e.adventures[a[0]].where}</div>
+          <div class="who">${e.adventures[a[0]].note}</div></div>`).join('')}
+  </div>` : ''}
+
   ${e.source_timeline.length ? `<div class="sect">
     <h3>Where the world has got her, over time</h3>
     ${e.source_timeline.map(t => `<div class="use">
@@ -651,11 +670,13 @@ function open(sym){
         source:'No record of where the world has got her over time.',
         condition:'No human condition on file. There may genuinely be none.',
         facets:'Her twelve facets are not mapped — what she heals, builds, poisons, plays.',
-        people:'The scientists after the discoverer are not listed.'
+        people:'The scientists after the discoverer are not listed.',
+        bases:'Her three home bases in time — found, worked, and living — are not set.',
+        adventures:'Her lab adventure and her field adventure are not written.'
       })[k]).join(' ')}</p>
-      <p class="unruled">${e.slots_open.length} of 9 slots open. Each one is a story
+      <p class="unruled">${e.slots_open.length} of 11 slots open. Each one is a story
       that has not been written.</p>`
-     : `<p class="note" style="color:var(--paper)">All seven filled. She is ready to
+     : `<p class="note" style="color:var(--paper)">All eleven filled. She is ready to
         be written.</p>`}
   </div>
 

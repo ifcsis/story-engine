@@ -7,6 +7,11 @@
    "hair": "Documented emission / flame / discharge colour only. Blank = unruled.",
    "coat": "Locked ROYGBIV family canon.",
    "trim": "Jmol extended CPK molecular-modelling colour."
+  },
+  "hq": {
+   "name": "The Library",
+   "where": "Washington, on the Potomac",
+   "note": "Nominally a branch of the Library of Congress. Actually an older building on the base between the Naval Research Laboratory and the Air Force field, with grounds, playing fields and training halls. Every element reports here. The call comes from here."
   }
  },
  "elements": [
@@ -95,7 +100,9 @@
     "source": false,
     "condition": false,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -103,8 +110,12 @@
     "places",
     "source",
     "condition",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -207,7 +218,9 @@
     "source": false,
     "condition": false,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -215,8 +228,12 @@
     "uses",
     "source",
     "condition",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -319,15 +336,21 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -419,7 +442,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -428,8 +453,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -514,7 +543,9 @@
     "source": false,
     "condition": false,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -523,8 +554,12 @@
     "places",
     "source",
     "condition",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -734,12 +769,18 @@
     "source": true,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 8,
    "slots_open": [
-    "character"
-   ]
+    "character",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -862,15 +903,21 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1010,14 +1057,20 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "hair",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1161,14 +1214,20 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "uses",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1247,7 +1306,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -1257,8 +1318,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1369,13 +1434,19 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 7,
    "slots_open": [
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1478,15 +1549,21 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1634,14 +1711,20 @@
     "source": true,
     "condition": false,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "character",
     "uses",
-    "condition"
-   ]
+    "condition",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1756,15 +1839,21 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -1877,15 +1966,21 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -2064,13 +2159,19 @@
     "source": true,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 7,
    "slots_open": [
     "character",
-    "uses"
-   ]
+    "uses",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -2309,10 +2410,43 @@
     "source": true,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": true,
+    "adventures": true
    },
-   "slots_filled": 9,
-   "slots_open": []
+   "slots_filled": 11,
+   "slots_open": [],
+   "bases": {
+    "discovery": {
+     "where": "Köping, Sweden — Scheele's apothecary",
+     "when": "1774",
+     "note": "A pharmacist's back room. Pyrolusite and spirit of salt, a yellow-green gas nobody had a name for yet. Her first breath is a shop, not a university."
+    },
+    "research": {
+     "where": "The fountain at the Métiers' place",
+     "when": "1890s",
+     "note": "Where she waits between jobs and where the call finds her. From here she goes to a city she is sent to clean up."
+    },
+    "nature": {
+     "where": "Salt — the sea, and the mines under Cheshire",
+     "when": "always",
+     "note": "She is never free in nature. She is always married to sodium in the brine and the rock salt; the story of getting her out is the story of the split."
+    }
+   },
+   "adventures": {
+    "lab": {
+     "title": "Scheele's yellow air",
+     "when": "1774",
+     "where": "Köping",
+     "note": "Repeat the split: pyrolusite, spirit of salt, gentle heat. Catch the gas. Learn that she bleaches the flower, kills the insect, and does not burn. Learn to be afraid of her at the right moment and not before."
+    },
+    "field": {
+     "title": "The Maidstone water",
+     "when": "1897",
+     "where": "Maidstone, Kent",
+     "note": "Typhoid in the mains, eighteen hundred sick. Bleaching powder into the reservoir and the pipes — the first time a whole town's water was chlorinated. She goes in, cleans the city, and nobody drinks her by accident."
+    }
+   }
   },
   {
    "ancient": false,
@@ -2387,7 +2521,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -2396,8 +2532,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -2482,7 +2622,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -2490,8 +2632,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -2579,7 +2725,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -2587,8 +2735,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -2665,7 +2817,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 1,
    "slots_open": [
@@ -2676,8 +2830,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -2849,12 +3007,18 @@
     "source": true,
     "condition": false,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 8,
    "slots_open": [
-    "condition"
-   ]
+    "condition",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -2937,7 +3101,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -2947,8 +3113,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -3045,7 +3215,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -3053,8 +3225,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -3148,7 +3324,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -3156,8 +3334,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -3426,12 +3608,18 @@
     "source": true,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 8,
    "slots_open": [
-    "character"
-   ]
+    "character",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -3518,7 +3706,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -3526,8 +3716,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -3613,7 +3807,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -3621,8 +3817,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -3807,13 +4007,19 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 7,
    "slots_open": [
     "character",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -3950,14 +4156,20 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "character",
     "uses",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4040,7 +4252,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -4050,8 +4264,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4135,7 +4353,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -4145,8 +4365,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -4313,15 +4537,21 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "places",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4425,7 +4655,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -4433,8 +4665,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4531,7 +4767,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -4539,8 +4777,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4620,7 +4862,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -4630,8 +4874,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4717,7 +4965,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -4727,8 +4977,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4811,7 +5065,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -4821,8 +5077,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -4906,7 +5166,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 1,
    "slots_open": [
@@ -4917,8 +5179,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5001,7 +5267,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -5011,8 +5279,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5089,7 +5361,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -5099,8 +5373,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5200,7 +5478,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -5209,8 +5489,12 @@
     "places",
     "source",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5301,7 +5585,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -5311,8 +5597,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5390,7 +5680,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 1,
    "slots_open": [
@@ -5401,8 +5693,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5483,7 +5779,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -5493,8 +5791,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5578,7 +5880,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -5588,8 +5892,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -5744,15 +6052,21 @@
     "source": false,
     "condition": false,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "source",
-    "condition"
-   ]
+    "condition",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5852,7 +6166,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -5860,8 +6176,12 @@
     "uses",
     "places",
     "source",
-    "facets"
-   ]
+    "facets",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -5943,7 +6263,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -5953,8 +6275,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -6103,14 +6429,20 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "character",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -6223,7 +6555,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -6232,8 +6566,12 @@
     "places",
     "source",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -6317,7 +6655,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -6327,8 +6667,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -6454,14 +6798,20 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "character",
     "uses",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -6546,7 +6896,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -6556,8 +6908,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -6656,7 +7012,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -6666,8 +7024,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -6750,7 +7112,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -6759,8 +7123,12 @@
     "places",
     "source",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -6837,7 +7205,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -6847,8 +7217,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -6926,7 +7300,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -6936,8 +7312,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7014,7 +7394,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7024,8 +7406,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7125,7 +7511,9 @@
     "source": false,
     "condition": false,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -7134,8 +7522,12 @@
     "places",
     "source",
     "condition",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7212,7 +7604,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7222,8 +7616,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7300,7 +7698,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7310,8 +7710,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7393,7 +7797,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7403,8 +7809,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7486,7 +7896,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7496,8 +7908,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7574,7 +7990,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7584,8 +8002,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7662,7 +8084,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7672,8 +8096,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7750,7 +8178,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7760,8 +8190,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7838,7 +8272,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7848,8 +8284,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -7926,7 +8366,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -7936,8 +8378,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8014,7 +8460,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -8024,8 +8472,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8102,7 +8554,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -8112,8 +8566,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8193,7 +8651,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -8203,8 +8663,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8286,7 +8750,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -8296,8 +8762,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8384,7 +8854,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -8392,8 +8864,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8473,7 +8949,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -8483,8 +8961,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8565,7 +9047,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -8575,8 +9059,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8667,7 +9155,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -8677,8 +9167,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -8772,7 +9266,9 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -8780,8 +9276,12 @@
     "uses",
     "places",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -8920,15 +9420,21 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 5,
    "slots_open": [
     "character",
     "uses",
     "source",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -9118,12 +9624,18 @@
     "source": true,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 8,
    "slots_open": [
-    "uses"
-   ]
+    "uses",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -9206,7 +9718,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -9215,8 +9729,12 @@
     "places",
     "source",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -9385,14 +9903,20 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "character",
     "uses",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": true,
@@ -9496,7 +10020,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -9505,8 +10031,12 @@
     "places",
     "source",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -9590,7 +10120,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 3,
    "slots_open": [
@@ -9599,8 +10131,12 @@
     "places",
     "source",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -9685,7 +10221,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -9695,8 +10233,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -9776,7 +10318,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -9786,8 +10330,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -9864,7 +10412,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -9874,8 +10424,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10024,13 +10578,19 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 7,
    "slots_open": [
     "character",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10107,7 +10667,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -10117,8 +10679,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10208,7 +10774,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -10218,8 +10786,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10296,7 +10868,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -10306,8 +10880,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10452,14 +11030,20 @@
     "source": false,
     "condition": true,
     "facets": true,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 6,
    "slots_open": [
     "character",
     "uses",
-    "source"
-   ]
+    "source",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10536,7 +11120,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -10546,8 +11132,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10647,7 +11237,9 @@
     "source": false,
     "condition": true,
     "facets": false,
-    "people": true
+    "people": true,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 4,
    "slots_open": [
@@ -10655,8 +11247,12 @@
     "uses",
     "places",
     "source",
-    "facets"
-   ]
+    "facets",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10737,7 +11333,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -10747,8 +11345,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10825,7 +11427,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -10835,8 +11439,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -10913,7 +11521,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 1,
    "slots_open": [
@@ -10924,8 +11534,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11002,7 +11616,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 1,
    "slots_open": [
@@ -11013,8 +11629,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11091,7 +11711,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11101,8 +11723,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11179,7 +11805,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11189,8 +11817,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11267,7 +11899,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11277,8 +11911,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11355,7 +11993,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11365,8 +12005,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11443,7 +12087,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11453,8 +12099,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11531,7 +12181,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11541,8 +12193,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11617,7 +12273,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11627,8 +12285,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11703,7 +12365,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11713,8 +12377,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11789,7 +12457,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11799,8 +12469,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11875,7 +12549,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11885,8 +12561,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -11961,7 +12641,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -11971,8 +12653,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12047,7 +12733,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12057,8 +12745,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12133,7 +12825,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12143,8 +12837,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12219,7 +12917,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12229,8 +12929,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12305,7 +13009,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12315,8 +13021,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12391,7 +13101,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12401,8 +13113,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12477,7 +13193,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12487,8 +13205,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12563,7 +13285,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12573,8 +13297,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12656,7 +13384,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12666,8 +13396,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   },
   {
    "ancient": false,
@@ -12742,7 +13476,9 @@
     "source": false,
     "condition": false,
     "facets": false,
-    "people": false
+    "people": false,
+    "bases": false,
+    "adventures": false
    },
    "slots_filled": 2,
    "slots_open": [
@@ -12752,8 +13488,12 @@
     "source",
     "condition",
     "facets",
-    "people"
-   ]
+    "people",
+    "bases",
+    "adventures"
+   ],
+   "bases": {},
+   "adventures": {}
   }
  ]
 }
