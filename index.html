@@ -218,6 +218,44 @@ dd{margin:0;font-variant-numeric:tabular-nums}
 .canonlist dt{font-size:11.5px;color:var(--paper-faint);letter-spacing:.02em;margin-top:9px}
 .canonlist dd{margin:2px 0 0;font-size:13px;line-height:1.5;color:var(--paper)}
 @media (prefers-reduced-motion:reduce){.rules summary::before{transition:none}}
+
+/* ---------- character canon view ---------- */
+#canonwrap{padding:18px 22px 40px;max-width:980px}
+.cbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
+.cbar select{min-width:min(100%,340px)}
+.cbar button{background:var(--ink-2);border:1px solid var(--line);color:var(--paper);padding:6px 12px;
+  border-radius:2px;cursor:pointer;font:inherit;font-size:13px}
+.cbar button:hover{background:var(--ink-3)}
+.sheet{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 36px}
+.sheet .full{grid-column:1/-1}
+.sheet h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4vw,40px);margin:0;line-height:1.1}
+.sheet h2 small{font-weight:300;font-style:italic;color:var(--paper-dim);font-size:.55em}
+.sheet .say{font-family:var(--serif);font-size:15px;color:var(--paper-dim);margin:6px 0 0}
+.sheet .say b{color:var(--paper)}
+.shead{display:flex;gap:20px;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.shead .bigsym{flex:none}
+.sheet section{padding:14px 0;border-bottom:1px solid var(--ink-3);break-inside:avoid}
+.sheet h3{font-family:var(--serif);font-weight:500;font-size:16px;margin:0 0 8px}
+.sheet p{font-size:13.5px;line-height:1.55;margin:6px 0 0;color:var(--paper)}
+.sheet p.dim{color:var(--paper-dim)}
+.sheet .canonlist dd{font-size:13.5px}
+.file{grid-column:1/-1;margin-top:22px;border:1px solid var(--line-2);padding:16px 18px;position:relative;
+  background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.012) 14px 15px)}
+.file h3{font-family:var(--serif);margin:0 0 4px}
+.file .stamp{position:absolute;top:14px;right:16px;border:2px solid #b3332e;color:#d9534c;padding:3px 9px;
+  font-size:11.5px;letter-spacing:.06em;transform:rotate(-4deg);font-weight:600}
+.file p{font-size:13px;color:var(--paper-dim);margin:6px 0 0;max-width:60ch}
+.redact{display:inline-block;height:.95em;background:#000;border:1px solid #1c2233;vertical-align:-2px;margin:0 .25em 0 0}
+.file .lines{margin-top:12px;line-height:1.9}
+@media (max-width:700px){.sheet{grid-template-columns:1fr}}
+@media print{
+  header,.bar,.count,.legend,.panel,.cbar,main>#stage,#listwrap{display:none!important}
+  body{background:#fff;color:#000} #canonwrap{padding:0;max-width:none}
+  .sheet p,.sheet .canonlist dd,.sheet h2,.sheet h3{color:#000}
+  .sheet .say,.sheet p.dim,.canonlist dt{color:#444}
+  .file{background:none}
+}
+.canonlink{background:var(--brass);color:#141005;border:0;border-radius:2px;padding:8px 14px;font:inherit;font-weight:600;font-size:13px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -259,6 +297,12 @@ dd{margin:0;font-variant-numeric:tabular-nums}
       <dt>The bond is sharing</dt>
       <dd>Two atoms each give what they have and become something neither could be alone. Holding hands is
       a bond. The number of cards she joins into a shield is how many bonds she makes.</dd>
+      <dt>The girls and the boys</dt>
+      <dd>Every element can be a girl or a boy, and each character is one or the other for good. What
+      differs is the history they lived in. For most of history boys were trained for war and weapons.
+      Girls could be weapons and go to war too, but more often they were part of a craft. That is the
+      historical record, not a statement about who is equal. The published table is the girls. The boys'
+      stories are held under review by L7 and appear here only as redacted files.</dd>
       <dt>The science is real</dt>
       <dd>No invented elements, reactions or properties. Dates, clothing and people are true to the year.
       If you look something up, you will find it is so.</dd>
@@ -277,6 +321,7 @@ dd{margin:0;font-variant-numeric:tabular-nums}
       <button data-v="long">Unfolded</button>
       <button data-v="fold">Folded</button>
       <button data-v="list">List</button>
+      <button data-v="canon">Character canon</button>
     </div>
   </div>
   <div class="ctl"><span>Colour by</span>
@@ -321,6 +366,7 @@ dd{margin:0;font-variant-numeric:tabular-nums}
 <main>
   <div class="stage" id="stage"><div class="grid" id="grid"></div></div>
   <div id="listwrap" hidden></div>
+  <div id="canonwrap" hidden></div>
 </main>
 
 <div class="count" id="count"></div>
@@ -332,6 +378,7 @@ dd{margin:0;font-variant-numeric:tabular-nums}
 <script>
 // Masked-symbol rule (2026-09-16): symbols whose letters come from a name other than the English one.
 // These are the girls who hide their faces. Bold italic serif on every table; plain for the rest.
+const INITIAL_HASH = location.hash;
 const MASKED = new Set(["Na","K","Fe","Cu","Ag","Sn","Sb","W","Au","Hg","Pb"]);
 </script>
 <script>
@@ -736,6 +783,8 @@ function open(sym){
     </dl>
   </div>
 
+  <div class="sect"><button class="canonlink" onclick="showCanon('${e.symbol}')">Open her full character canon</button></div>
+
   <div class="sect">
     <h3>What is still unwritten</h3>
     ${e.slots_open.length ? `<p class="note" style="color:var(--paper)">${
@@ -828,10 +877,129 @@ function renderLegend(){
   }
 }
 
+
+/* ---------- character canon view ---------- */
+function yearWord(e){ return e.ancient ? 'antiquity' : (e.year != null ? String(e.year) : 'an unrecorded year'); }
+function shieldLine(e){
+  const g = e.group, n = e.nvalence;
+  if (e.symbol === 'H') return 'One electron, always moving between her hands. Her shield holds one, with one empty place.';
+  if (e.symbol === 'He') return 'A full shield of two. There is no empty place, and she does not need one.';
+  if (g === 1) return 'One electron she can give away.';
+  if (g === 2) return 'Two electrons to give.';
+  if (g >= 14 && g <= 17 && n) return `A shield of ${n} with ${8-n} empty ${8-n===1?'place':'places'} — where a bond forms. It shows her outer electrons, not her number.`;
+  if (g === 18) return 'A full shield of eight. No empty place.';
+  return '';
+}
+function redactBar(seed, i){ const w = 40 + ((seed*37 + i*53) % 150); return `<span class="redact" style="width:${w}px" aria-hidden="true"></span>`; }
+function renderCanon(){
+  const W = $('#canonwrap');
+  const sym = state.sel && BY[state.sel] ? state.sel : (state.canonSym || 'H');
+  state.canonSym = sym;
+  const e = BY[sym], idx = EL.indexOf(e);
+  const hh = hairHex(e);
+  const opts = EL.map(x => `<option value="${x.symbol}" ${x.symbol===sym?'selected':''}>${x.z} · ${x.symbol} · ${x.character || x.name} — ${x.name}</option>`).join('');
+  const letters = e.symbol.split('').join('&thinsp;·&thinsp;');
+  const place = (e.place_discovery && e.place_discovery[0]) || e.where || '';
+  const shield = shieldLine(e);
+  const music = e.instrument && !(e.canon||[]).some(c => c[0]==='Her music') ? e.instrument : '';
+  const seed = e.z;
+  W.innerHTML = `
+  <div class="cbar">
+    <button id="cprev" aria-label="Previous element">Previous</button>
+    <select id="csel" aria-label="Choose an element">${opts}</select>
+    <button id="cnext" aria-label="Next element">Next</button>
+    <button id="cprint">Print this page</button>
+  </div>
+  <article class="sheet">
+    <div class="shead full">
+      <div class="bigsym" style="background:${e.coat_hex};--trim:${e.trim_hex||'#000'}">
+        <span>${e.z}</span><b class="${MASKED.has(e.symbol)?'masked':''}">${e.symbol}</b><span>${fmt(e.mass)}</span></div>
+      <div>
+        <h2>${e.character || e.name} <small>${e.name}, element ${e.z}</small></h2>
+        <p class="say">Say the letters: <b>${letters}</b>.${e.names.length>1 ? ` Other girls of her element spell it ${e.names.slice(1).map(n=>`<b>${n}</b>`).join(', ')}.` : ''}</p>
+      </div>
+    </div>
+
+    <section>
+      <h3>How she looks</h3>
+      <div class="swatches">
+        <div class="sw" style="background:${e.coat_hex}"><b>Coat</b>${e.coat_word}</div>
+        <div class="sw" style="background:${e.trim_hex||'#333'};color:#000"><b>Trim</b>${e.trim_hex||'—'}</div>
+        <div class="sw" style="background:${hh||'#171d2e'};color:${dark(hh)}"><b>Hair</b>${e.hair || 'unruled'}</div>
+        ${e.halo ? `<div class="sw halo" style="background:linear-gradient(135deg,${e.halo.lines.join(',')});color:#000"><b>Halo</b>${e.halo.name}</div>` : ''}
+      </div>
+      <p>Her coat is the ${e.coat} colour. Her cut is ${e.ancient ? 'older than writing' : `from ${yearWord(e)}`}${place && !e.ancient ? `, ${place}` : ''}.
+      ${e.wings ? 'She has wings and a halo, the halogens\u2019 mark.' : ''}${e.cape ? 'She wears a cape, because she is a gas.' : ''}</p>
+      ${e.costume ? `<p>${e.costume}</p>` : ''}
+      <p class="dim">High neck, sleeves, gloves, skirt to the knee or longer. Her eyes shine and focus; their colour and her skin are never described.</p>
+    </section>
+
+    <section>
+      <h3>How she is read</h3>
+      <p>${e.halo ? 'With a spectroscope, off her halo. Nobody burns her hair.'
+        : 'By a trained scientist, from one plucked strand of her hair held in a flame, with her consent.'}</p>
+      ${e.hair_options.length ? `<p class="dim">${e.hair_options.map(o => `${o.color} (${o.basis.toLowerCase()})`).join('; ')}.</p>` : ''}
+      ${shield ? `<p>${shield}</p>` : ''}
+    </section>
+
+    ${(e.canon && e.canon.length) || music ? `<section class="full">
+      <h3>What the canon says about her</h3>
+      <dl class="canonlist">
+        ${(e.canon||[]).map(c => `<dt>${c[0]}</dt><dd>${c[1]}</dd>`).join('')}
+        ${music ? `<dt>Her music</dt><dd>${music}</dd>` : ''}
+      </dl></section>` : ''}
+
+    <section>
+      <h3>Who found her</h3>
+      <p>${e.mentor || 'Not on file.'}${e.ancient ? ', before anyone wrote it down' : (e.year ? `, ${e.year}` : '')}${e.where ? ` · ${e.where}` : ''}.</p>
+      ${e.name_origin ? `<p class="dim">${e.name_origin}</p>` : ''}
+    </section>
+
+    <section>
+      <h3>Her school</h3>
+      <p>${SE.meta.schools ? SE.meta.schools.girls : 'Mesa, Arizona'}. She reports to ${SE.meta.hq.name}.</p>
+    </section>
+
+    ${Object.keys(e.bases||{}).length || Object.keys(e.adventures||{}).length ? `<section class="full">
+      <h3>Her home bases and adventures</h3>
+      ${['discovery','research','nature'].filter(k=>e.bases[k]).map(k=>`<p><b>${e.bases[k].where}</b> <span class="dim">(${e.bases[k].when})</span> — ${e.bases[k].note}</p>`).join('')}
+      ${['lab','field'].filter(k=>e.adventures[k]).map(k=>`<p><b>${e.adventures[k].title}</b> <span class="dim">(${e.adventures[k].when}, ${e.adventures[k].where})</span> — ${e.adventures[k].note}</p>`).join('')}
+    </section>` : ''}
+
+    <section class="full">
+      <h3>Still to be written</h3>
+      <p class="dim">${e.slots_open.length ? `${e.slots_open.length} of 11 story slots are open. Click her on the table for the full list.` : 'All eleven slots are filled. She is ready to be written.'}</p>
+    </section>
+
+    <div class="file" role="note" aria-label="Classified file">
+      <span class="stamp">UNDER L7 REVIEW</span>
+      <h3>${e.boy_name ? e.boy_name : redactBar(seed,0)} <small class="dim" style="font-weight:300">the ${e.name.toLowerCase()} boy</small></h3>
+      <p>He exists. Every element can be a boy or a girl. Boys like him were more often trained for war and
+      weapons, so his story is still under review and this file stays redacted.
+      School: ${SE.meta.schools ? SE.meta.schools.boys : 'Washington'}.</p>
+      <div class="lines">${[0,1,2,3].map(r => [1,2,3].map(i => redactBar(seed+r*7, i)).join('')).join('<br>')}</div>
+    </div>
+  </article>`;
+  const go = s => { state.canonSym = s; state.sel = null; history.replaceState(null,'','#canon-'+s); renderCanon(); W.scrollIntoView({block:'start'}); };
+  $('#csel').onchange = ev => go(ev.target.value);
+  $('#cprev').onclick = () => go(EL[(idx + EL.length - 1) % EL.length].symbol);
+  $('#cnext').onclick = () => go(EL[(idx + 1) % EL.length].symbol);
+  $('#cprint').onclick = () => window.print();
+  $('#count').textContent = `Character canon · ${e.character || e.name}, ${idx+1} of 118`;
+  history.replaceState(null,'','#canon-'+sym);
+}
+function showCanon(sym){
+  state.view = 'canon'; state.canonSym = sym; state.sel = null;
+  [...$('#viewseg').children].forEach(x => x.setAttribute('aria-pressed', x.dataset.v==='canon'));
+  panel.dataset.open = 'false'; draw();
+}
+
 /* ---------- draw ---------- */
 function draw(){
-  const list = state.view === 'list';
-  $('#listwrap').hidden = !list; stage.hidden = list;
+  const list = state.view === 'list', canonV = state.view === 'canon';
+  $('#listwrap').hidden = !list; $('#canonwrap').hidden = !canonV; stage.hidden = list || canonV;
+  if (canonV){ renderCanon(); $('#legend').innerHTML=''; return; }
+  if (location.hash.startsWith('#canon')) history.replaceState(null,'',location.pathname);
   if (list) renderList(); else renderGrid();
   renderLegend();
   const t = state.turn;
@@ -868,6 +1036,10 @@ $('#year').oninput = e => {
 $('#q').oninput = e => { state.q = e.target.value; draw(); };
 
 draw();
+</script>
+<script>
+(function(){ const m = INITIAL_HASH.match(/^#canon-([A-Za-z]{1,2})$/);
+  if (m && BY[m[1]]) showCanon(m[1]); else if (INITIAL_HASH === '#canon') showCanon('H'); })();
 </script>
 </body>
 </html>

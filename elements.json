@@ -12,6 +12,10 @@
    "name": "The Library",
    "where": "Washington, on the Potomac",
    "note": "Nominally a branch of the Library of Congress. Actually an older building on the base between the Naval Research Laboratory and the Air Force field, with grounds, playing fields and training halls. Every element reports here. The call comes from here."
+  },
+  "schools": {
+   "girls": "Mesa, Arizona",
+   "boys": "Naval Research Laboratory, Washington"
   }
  },
  "elements": [
@@ -142,7 +146,8 @@
    ],
    "instrument": "Singing.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -279,7 +284,8 @@
    ],
    "instrument": "Electrical discharge — each line in her spectrum is a note.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -406,7 +412,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -524,7 +531,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -634,7 +642,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -864,7 +873,8 @@
    "canon": [],
    "instrument": "Woodwinds and drum skins.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -1009,7 +1019,8 @@
    "canon": [],
    "instrument": "Singing.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -1189,7 +1200,8 @@
    ],
    "instrument": "Singing.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -1355,7 +1367,8 @@
    "canon": [],
    "instrument": "",
    "wings": true,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -1461,7 +1474,8 @@
    "canon": [],
    "instrument": "Electrical discharge — each line in her spectrum is a note.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -1611,7 +1625,8 @@
    ],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -1738,7 +1753,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -1909,7 +1925,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -2048,7 +2065,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -2183,7 +2201,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -2382,7 +2401,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -2660,7 +2680,6 @@
    },
    "names": [
     "Cielle",
-    "Cee Elle",
     "CeeElle",
     "CeeEl",
     "CeeEll",
@@ -2690,7 +2709,8 @@
    ],
    "instrument": "Harp and violin.",
    "wings": true,
-   "cape": false
+   "cape": false,
+   "boy_name": "Cee Elle"
   },
   {
    "ancient": false,
@@ -2792,7 +2812,8 @@
    "canon": [],
    "instrument": "Electrical discharge — each line in her spectrum is a note.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -2901,7 +2922,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -3014,7 +3036,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -3118,7 +3141,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -3240,7 +3264,7 @@
      "Brånemark: it grows into bone. Implants."
     ]
    ],
-   "character": "TiAye",
+   "character": "TeeEye",
    "mentor": "William Gregor",
    "mass": 47.867,
    "melt": 1943.15,
@@ -3303,25 +3327,16 @@
    "bases": {},
    "adventures": {},
    "names": [
-    "TiAye",
     "TeeEye",
     "TeeIgh",
     "TeeAye",
     "TeaEye"
    ],
-   "canon": [
-    [
-     "Her story",
-     "A boy of the transition house, in black. Stored as black sand, made into a weapon, then found inside people as implants — and from there he wants to become a person."
-    ],
-    [
-     "Where it goes",
-     "He grows up off the page and becomes a neuro-orthopedic surgeon: from the metal in a spine to the one who places it."
-    ]
-   ],
+   "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": "TiAye"
   },
   {
    "ancient": false,
@@ -3429,7 +3444,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -3551,7 +3567,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -3670,7 +3687,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -3981,7 +3999,8 @@
    ],
    "instrument": "Piano, steel guitar strings, drums.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -4093,7 +4112,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -4204,7 +4224,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -4411,7 +4432,8 @@
    "canon": [],
    "instrument": "Brass, with zinc.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -4571,7 +4593,8 @@
    "canon": [],
    "instrument": "Brass, with copper.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -4681,7 +4704,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -4792,7 +4816,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -4983,7 +5008,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5112,7 +5138,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5234,7 +5261,8 @@
    "canon": [],
    "instrument": "",
    "wings": true,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5341,7 +5369,8 @@
    "canon": [],
    "instrument": "Electrical discharge — each line in her spectrum is a note.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5454,7 +5483,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5564,7 +5594,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5674,7 +5705,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5784,7 +5816,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -5888,7 +5921,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -6014,7 +6048,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -6132,7 +6167,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -6238,7 +6274,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -6346,7 +6383,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -6457,7 +6495,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -6636,7 +6675,8 @@
    "canon": [],
    "instrument": "Bells.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -6761,7 +6801,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -6870,7 +6911,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -7042,7 +7084,8 @@
    "canon": [],
    "instrument": "Whistles.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -7181,7 +7224,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -7292,7 +7336,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -7441,7 +7486,8 @@
    "canon": [],
    "instrument": "",
    "wings": true,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -7553,7 +7599,8 @@
    "canon": [],
    "instrument": "Electrical discharge — each line in her spectrum is a note.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -7679,7 +7726,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -7787,7 +7835,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -7890,7 +7939,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -7995,7 +8045,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8099,7 +8150,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8225,7 +8277,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8329,7 +8382,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8433,7 +8487,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8542,7 +8597,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8651,7 +8707,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8755,7 +8812,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8859,7 +8917,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -8963,7 +9022,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9067,7 +9127,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9171,7 +9232,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9275,7 +9337,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9379,7 +9442,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9486,7 +9550,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9594,7 +9659,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9704,7 +9770,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9811,7 +9878,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -9919,7 +9987,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -10037,7 +10106,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -10156,7 +10226,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -10319,7 +10390,8 @@
    "canon": [],
    "instrument": "She does not make much music.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -10400,7 +10472,7 @@
     }
    ],
    "condition": "Erethism — the hatters' tremor, timidity and rage, from mercury in felting. Minamata disease from methylmercury in the bay, 1956. Acrodynia in children.",
-   "costume": "Always in a hat, and always in swimwear. The hats are the hatters — mercury in felting gave them the tremor and the rage. The swimwear is because he is the only one of them who is a liquid. He is from Almadén.",
+   "costume": "Always in a hat. The hats are the hatters — mercury in felting gave them the tremor and the rage. She is from Almadén.",
    "place_discovery": [
     "Known before record",
     null,
@@ -10540,7 +10612,8 @@
    ],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -10649,7 +10722,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -10841,7 +10915,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": true,
@@ -10971,7 +11046,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11081,7 +11157,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11193,7 +11270,8 @@
    "canon": [],
    "instrument": "",
    "wings": true,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11300,7 +11378,8 @@
    "canon": [],
    "instrument": "Electrical discharge — each line in her spectrum is a note.",
    "wings": false,
-   "cape": true
+   "cape": true,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11404,7 +11483,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11575,7 +11655,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11679,7 +11760,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11796,7 +11878,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -11900,7 +11983,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12067,7 +12151,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12171,7 +12256,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12296,7 +12382,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12404,7 +12491,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12508,7 +12596,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12613,7 +12702,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12718,7 +12808,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12822,7 +12913,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -12926,7 +13018,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13030,7 +13123,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13134,7 +13228,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13238,7 +13333,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13342,7 +13438,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13444,7 +13541,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13546,7 +13644,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13648,7 +13747,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13750,7 +13850,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13852,7 +13953,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -13954,7 +14056,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14056,7 +14159,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14158,7 +14262,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14260,7 +14365,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14362,7 +14468,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14464,7 +14571,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14566,7 +14674,8 @@
    "canon": [],
    "instrument": "",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14675,7 +14784,8 @@
    "canon": [],
    "instrument": "",
    "wings": true,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   },
   {
    "ancient": false,
@@ -14777,7 +14887,8 @@
    "canon": [],
    "instrument": "Electrical discharge — each line in her spectrum is a note.",
    "wings": false,
-   "cape": false
+   "cape": false,
+   "boy_name": ""
   }
  ]
 }
