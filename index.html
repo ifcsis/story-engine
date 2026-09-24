@@ -198,6 +198,26 @@ dd{margin:0;font-variant-numeric:tabular-nums}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 .sym.masked,b.masked{font-family:"Spectral",Georgia,serif;font-weight:700;font-style:italic}
 .pname .pelem{font-weight:300;opacity:.75}
+
+/* ---------- the rules every element keeps ---------- */
+.rules{max-width:78ch;margin:14px 0 0}
+.rules summary{cursor:pointer;color:var(--brass);font-size:13.5px;font-family:var(--serif);font-style:italic;
+  list-style:none;display:inline-flex;align-items:center;gap:.45em}
+.rules summary::-webkit-details-marker{display:none}
+.rules summary::before{content:"";width:.55em;height:.55em;border-right:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .15s}
+.rules[open] summary::before{transform:rotate(45deg)}
+.rules .body{columns:2 30ch;column-gap:32px;margin-top:12px}
+.rules dl,.canonlist{display:block}
+.rules dl{margin:0}
+.rules dt{color:var(--paper);font-family:var(--serif);font-weight:500;font-size:14.5px;margin:0 0 3px;break-after:avoid}
+.rules dd{margin:0 0 13px;font-size:13px;line-height:1.55;color:var(--paper-dim);break-inside:avoid}
+.rules .fire{border-left:2px solid var(--brass);padding:2px 0 2px 12px;color:var(--paper);font-style:italic;
+  font-family:var(--serif);font-size:13.5px;line-height:1.6;break-inside:avoid;margin:4px 0 12px}
+.canonlist{margin:6px 0 0}
+.canonlist dt{font-size:11.5px;color:var(--paper-faint);letter-spacing:.02em;margin-top:9px}
+.canonlist dd{margin:2px 0 0;font-size:13px;line-height:1.5;color:var(--paper)}
+@media (prefers-reduced-motion:reduce){.rules summary::before{transition:none}}
 </style>
 </head>
 <body>
@@ -207,6 +227,47 @@ dd{margin:0;font-variant-numeric:tabular-nums}
   <p class="sub">Every element is a character. The coat is the family, the piping is the
   molecular-modelling colour, and the light is what it gives off when it burns. Click any
   one of them.</p>
+
+  <details class="rules">
+    <summary>The rules every element keeps</summary>
+    <div class="body">
+    <dl>
+      <dt>Three colours, always</dt>
+      <dd>Her hair is the colour her element gives off when it burns or glows. Her trim is the
+      colour her atom is drawn in a molecular model. Her coat is her family's colour, red through
+      violet across the table.</dd>
+      <dt>Dressed for the work</dt>
+      <dd>High necks, sleeves, gloves, skirts to the knee or longer. She can move, fight, heal and bond
+      in what she wears. The cut is the year and country she was found in.</dd>
+      <dt>Her eyes and her face</dt>
+      <dd>Her eyes shine and focus. Their colour is never given, and neither is her skin — every reader
+      should be able to find herself in the face.</dd>
+      <dt>Wings, halos and capes</dt>
+      <dd>Only the six halogens have wings and a halo, a thin ring of their own light. The other gases
+      wear capes.</dd>
+      <dt>Who can see them</dt>
+      <dd>A person sees an element to the degree she truly understands the matter in front of her. A baker
+      and a physicist can both see. Love, courage and luck cannot buy it. Anyone who is dying sees them
+      in full.</dd>
+      <dt>How one is measured</dt>
+      <dd>A halogen is read with a spectroscope, off her halo. Anyone else is read by a trained scientist
+      from one plucked strand of hair, held in a flame — with her consent, and never the whole head.</dd>
+      <dt>Letters, number, name</dt>
+      <dd>Berzelius gave her letters. Her number is the count of protons at her core, and nothing that
+      happens to her changes it. Her name is what a mouth makes of her letters, so there are many
+      spellings, and many characters, for every element.</dd>
+      <dt>The bond is sharing</dt>
+      <dd>Two atoms each give what they have and become something neither could be alone. Holding hands is
+      a bond. The number of cards she joins into a shield is how many bonds she makes.</dd>
+      <dt>The science is real</dt>
+      <dd>No invented elements, reactions or properties. Dates, clothing and people are true to the year.
+      If you look something up, you will find it is so.</dd>
+    </dl>
+    <p class="fire">The girls on this table have hair the colour of their flames because they are the
+    elements. You are a person, and fire can hurt you. Dress up, sing, pretend to be any of them —
+    but never light anything to see what colour it burns. The fire stays on the page.</p>
+    </div>
+  </details>
 </header>
 
 <div class="bar">
@@ -325,7 +386,7 @@ function ramp(t){
 }
 function fillFor(e, key, sc){
   if (key === 'condition') return e.condition ? '#8E2B3A' : '#171d2e';
-  if (key === 'slots') return ramp(e.slots_filled / 9);
+  if (key === 'slots') return ramp(e.slots_filled / 11);
   if (key === 'doubted') {
     const n = e.people.filter(p => ['ignored','punished','died of it'].includes(p.reception)).length;
     return n ? ramp(Math.min(n,4)/4) : (e.people.length ? '#1d2740' : '#171d2e');
@@ -362,6 +423,7 @@ function hit(e){
   const q = state.q.trim().toLowerCase();
   if (!q) return true;
   return [e.name,e.symbol,String(e.z),e.coat,e.series,e.mentor,e.where,e.uses,
+          (e.names||[]).join(' '),(e.canon||[]).map(c=>c[1]).join(' '),e.instrument||'',
           e.sources,e.nature_team,e.hair,String(e.year),e.name_origin,e.condition,e.costume,
           e.hair_options.map(o=>o.color+' '+o.detail).join(' '),
           Object.values(e.facets).join(' '),
@@ -589,6 +651,22 @@ function open(sym){
         </div>`).join('')}
   </div>` : ''}
 
+  ${e.names && e.names.length ? `<div class="sect">
+    <h3>Her name, and how to say it</h3>
+    <p class="note">Say the letters: <b>${e.symbol.split('').join('&thinsp;·&thinsp;')}</b>. Spell the sound in English and you have her name.
+    ${e.names.length>1 ? `She is <b>${e.names[0]}</b>; another atom of hers might spell it ${e.names.slice(1).map(n=>`<b>${n}</b>`).join(', ')} — every spelling says the same ${e.symbol.length>1?'two letters':'letter'}.` : `She is <b>${e.names[0]}</b>.`}</p>
+  </div>` : ''}
+
+  ${(e.canon && e.canon.length) || e.instrument || e.wings || e.cape ? `<div class="sect">
+    <h3>What the canon says about her</h3>
+    <dl class="canonlist">
+      ${(e.canon||[]).map(c => `<dt>${c[0]}</dt><dd>${c[1]}</dd>`).join('')}
+      ${e.instrument && !(e.canon||[]).some(c => c[0]==='Her music') ? `<dt>Her music</dt><dd>${e.instrument}</dd>` : ''}
+      ${e.wings ? `<dt>Her family's mark</dt><dd>Wings and a halo — the salt-maker's badge. No other house wears one.</dd>` : ''}
+      ${e.cape ? `<dt>Her family's mark</dt><dd>A cape, because she is a gas.</dd>` : ''}
+    </dl>
+  </div>` : ''}
+
   ${Object.keys(e.bases).length ? `<div class="sect">
     <h3>Her home bases, in time</h3>
     ${[['discovery','Where she was found'],['research','Where her work is centred'],['nature','Where she lives in nature']]
@@ -662,7 +740,7 @@ function open(sym){
     <h3>What is still unwritten</h3>
     ${e.slots_open.length ? `<p class="note" style="color:var(--paper)">${
       e.slots_open.map(k => ({
-        character:'She has no name yet.',
+        character:'She has no name yet — but the letters say how to say it.',
         hair:'Her hair has an option still marked proposed.',
         mentor:'No mentor on file.',
         uses:'No use timeline — what she was used for, and with whom.',
@@ -724,7 +802,7 @@ function renderLegend(){
     const open = EL.reduce((a,e) => a + e.slots_open.length, 0);
     L.innerHTML = `<span>nothing written</span>
       <span class="scalebar" style="background:${bar}"></span>
-      <span>all seven filled</span>
+      <span>all eleven filled</span>
       <span style="color:var(--brass)">${open} slots still open</span>`;
   } else if (k === 'condition'){
     L.innerHTML = '<span><i class="chip" style="background:#8E2B3A"></i>' +

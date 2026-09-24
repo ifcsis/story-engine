@@ -115,7 +115,34 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Eytch",
+    "Aitch",
+    "Aich",
+    "Aytch"
+   ],
+   "canon": [
+    [
+     "Her work",
+     "She is in stars, in water, in your body."
+    ],
+    [
+     "Her manner",
+     "Not patient. Persistent. Her eyes never dim."
+    ],
+    [
+     "Her music",
+     "Singing."
+    ],
+    [
+     "Her hands",
+     "She always has an electron and is always switching it between her hands. Giving and taking are the same motion to her."
+    ]
+   ],
+   "instrument": "Singing.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -181,7 +208,7 @@
     -101.4
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "Eytchi",
    "mentor": "Sir William Ramsey, Nils Langet, P.T.Cleve",
    "mass": 4.002602,
    "melt": null,
@@ -210,7 +237,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Helium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -222,9 +249,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "source",
     "condition",
@@ -233,7 +259,27 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Eytchi",
+    "Aitchee",
+    "Aitchie",
+    "Aitchy",
+    "Eytchee"
+   ],
+   "canon": [
+    [
+     "Her manner",
+     "Complete by herself. Noble gases do not bond; she does not need to."
+    ],
+    [
+     "Her dress",
+     "Cape and beret."
+    ]
+   ],
+   "instrument": "Electrical discharge — each line in her spectrum is a note.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -297,7 +343,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Eleye",
    "mentor": "Johann Arfwedson",
    "mass": 6.94,
    "melt": 453.65,
@@ -328,7 +374,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Lithium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -340,9 +386,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -350,7 +395,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Eleye",
+    "Eligh",
+    "Elaye",
+    "Elleye",
+    "Elligh"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -403,7 +459,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "BeeEe",
    "mentor": "Fredrich Wöhler, A.A.Bussy",
    "mass": 9.0121831,
    "melt": 1560.15,
@@ -434,7 +490,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Beryllium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": false,
     "mentor": true,
     "uses": false,
@@ -446,9 +502,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "hair",
     "uses",
     "places",
@@ -458,7 +513,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "BeeEe",
+    "BiEe",
+    "BeeIe",
+    "BeeY",
+    "BeaEe"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -504,7 +570,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Bee",
    "mentor": "Sir H. Davy, J.L. Gay-Lussac, L.J. Thénard",
    "mass": 10.81,
    "melt": 2350.15,
@@ -535,7 +601,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Boron",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -547,9 +613,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -559,7 +624,17 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Bee",
+    "Bea",
+    "Be",
+    "Bi"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -687,7 +762,7 @@
      "General Electric makes diamond. Synthetic now exceeds mined."
     ]
    ],
-   "character": "",
+   "character": "Cee",
    "mentor": "The hands at Chauvet → The colliers",
    "mass": 12.011,
    "melt": null,
@@ -761,7 +836,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Carbon",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": true,
@@ -773,14 +848,23 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 8,
+   "slots_filled": 9,
    "slots_open": [
-    "character",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Cee",
+    "See",
+    "Sea",
+    "Si"
+   ],
+   "canon": [],
+   "instrument": "Woodwinds and drum skins.",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -862,7 +946,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "En",
    "mentor": "Daniel Rutherford",
    "mass": 14.007,
    "melt": 63.14999999999998,
@@ -895,7 +979,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Nitrogen",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -907,9 +991,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -917,7 +1000,16 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "En",
+    "Enn",
+    "Ehn"
+   ],
+   "canon": [],
+   "instrument": "Singing.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -1070,7 +1162,34 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Oh",
+    "O",
+    "Owe",
+    "Eau"
+   ],
+   "canon": [
+    [
+     "Her voice",
+     "Plain. She states what can be observed. She will not work in a corset."
+    ],
+    [
+     "Her music",
+     "Singing."
+    ],
+    [
+     "Her hands",
+     "A shield of six with two empty places, and two hands always reaching. Water is Oh in the middle, holding two hydrogens."
+    ],
+    [
+     "Her colour",
+     "Her hair is blue on the flame-test reading — oxygen makes a fire hotter and bluer. She has no halo; she is not a halogen."
+    ]
+   ],
+   "instrument": "Singing.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -1175,7 +1294,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "Effee",
+   "character": "Eff",
    "mentor": "Henri Moissan",
    "mass": 18.998403163,
    "melt": 53.47999999999999,
@@ -1227,7 +1346,16 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Eff",
+    "Ef",
+    "Eph"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": true,
+   "cape": false
   },
   {
    "ancient": false,
@@ -1269,7 +1397,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Enee",
    "mentor": "Sir William Ramsey, M.W. Travers",
    "mass": 20.1797,
    "melt": 24.559999999999974,
@@ -1298,7 +1426,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Neon",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -1310,9 +1438,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -1323,7 +1450,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Enee",
+    "Enny",
+    "Enie",
+    "Eny",
+    "Ennee"
+   ],
+   "canon": [],
+   "instrument": "Electrical discharge — each line in her spectrum is a note.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -1446,7 +1584,34 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Enay",
+    "Eneigh",
+    "Ennay",
+    "Ennaye"
+   ],
+   "canon": [
+    [
+     "Her work",
+     "She bonds quickly. With Cielle she is table salt — one of the warmest pairs on the table."
+    ],
+    [
+     "Her hands",
+     "She holds her one electron still, in an open palm, and likes to give it away."
+    ],
+    [
+     "Her mask",
+     "Na is from natrium and does not spell her name, so her letters are an alias and she covers part of her face."
+    ],
+    [
+     "One rule",
+     "She is never placed in water as sodium metal."
+    ]
+   ],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -1510,7 +1675,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Emjee",
    "mentor": "Sir Humphrey Davy",
    "mass": 24.305,
    "melt": 923.15,
@@ -1541,7 +1706,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Magnesium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -1553,9 +1718,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -1563,7 +1727,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Emjee",
+    "Emgee",
+    "Emji",
+    "Emmjee",
+    "Emmgee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -1672,7 +1847,7 @@
      "Recycling supplies a third of it"
     ]
    ],
-   "character": "",
+   "character": "AyElle",
    "mentor": "Hans Christian Oersted",
    "mass": 26.9815385,
    "melt": 933.473,
@@ -1703,7 +1878,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Aluminum",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -1715,16 +1890,26 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 6,
+   "slots_filled": 7,
    "slots_open": [
-    "character",
     "uses",
     "condition",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "AyElle",
+    "Ayelle",
+    "AyEl",
+    "AyEll",
+    "AyeElle"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -1799,7 +1984,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Esseye",
    "mentor": "Jöns Berzelius",
    "mass": 28.085,
    "melt": 1687.15,
@@ -1831,7 +2016,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Silicon",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -1843,9 +2028,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -1853,7 +2037,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Esseye",
+    "Essigh",
+    "Essaye",
+    "Eseye",
+    "Esigh"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -1925,7 +2120,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Pea",
    "mentor": "Hennig Brand",
    "mass": 30.973761998,
    "melt": null,
@@ -1958,7 +2153,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Phosphorus",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -1970,9 +2165,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -1980,7 +2174,16 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Pea",
+    "Pee",
+    "Pe"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -2085,7 +2288,7 @@
      "Recovered from sour gas and oil. Nobody mines it any more — it is a by-product of not wanting it in the fuel."
     ]
    ],
-   "character": "",
+   "character": "Ess",
    "mentor": "Tapputi-Belatekallim → The compiler of the Zhenyuan miaodao yaolüe",
    "mass": 32.06,
    "melt": null,
@@ -2151,7 +2354,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Sulfur",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -2163,15 +2366,23 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 7,
+   "slots_filled": 8,
    "slots_open": [
-    "character",
     "uses",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Ess",
+    "Es",
+    "Esse"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -2446,7 +2657,40 @@
      "where": "Maidstone, Kent",
      "note": "Typhoid in the mains, eighteen hundred sick. Bleaching powder into the reservoir and the pipes — the first time a whole town's water was chlorinated. She goes in, cleans the city, and nobody drinks her by accident."
     }
-   }
+   },
+   "names": [
+    "Cielle",
+    "Cee Elle",
+    "CeeElle",
+    "CeeEl",
+    "CeeEll",
+    "SeeElle"
+   ],
+   "canon": [
+    [
+     "Her work",
+     "She cleans water. She protects people from waterborne disease."
+    ],
+    [
+     "Her music",
+     "Harp and violin."
+    ],
+    [
+     "Her coat",
+     "Blue, cut 1832. White was what she did; blue is who she is."
+    ],
+    [
+     "Her name",
+     "Cielle, from her dying mother's song, before Berzelius gave her letters. The same Cl said as letters in English is Cee Elle — a different atom."
+    ],
+    [
+     "Her hands",
+     "A shield of seven with one empty slot. Seven is too many for a hand; the shield is how she carries seven. It shows seven, not seventeen."
+    ]
+   ],
+   "instrument": "Harp and violin.",
+   "wings": true,
+   "cape": false
   },
   {
    "ancient": false,
@@ -2537,7 +2781,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Ahray",
+    "Ayarr",
+    "AyArr",
+    "AyAr",
+    "AyAre"
+   ],
+   "canon": [],
+   "instrument": "Electrical discharge — each line in her spectrum is a note.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -2583,7 +2838,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Kay",
    "mentor": "Sir Humphrey Davy",
    "mass": 39.0983,
    "melt": 336.65,
@@ -2614,7 +2869,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Potassium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -2626,9 +2881,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -2637,7 +2891,17 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Kay",
+    "Kae",
+    "Kai",
+    "Cay"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -2686,7 +2950,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Sieigh",
    "mentor": "Sir Humphrey Davy",
    "mass": 40.078,
    "melt": 1115.15,
@@ -2717,7 +2981,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Calcium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -2729,9 +2993,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -2740,7 +3003,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Sieigh",
+    "CeeAy",
+    "CeeAye",
+    "CeeEigh",
+    "SeeAy"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -2778,7 +3052,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Esscee",
    "mentor": "Lars Nilson",
    "mass": 44.955908,
    "melt": 1814.15,
@@ -2809,7 +3083,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Scandium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": false,
     "mentor": true,
     "uses": false,
@@ -2821,9 +3095,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 1,
+   "slots_filled": 2,
    "slots_open": [
-    "character",
     "hair",
     "uses",
     "places",
@@ -2835,7 +3108,17 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Esscee",
+    "EssSee",
+    "EssSea",
+    "Escee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -3018,7 +3301,27 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "TiAye",
+    "TeeEye",
+    "TeeIgh",
+    "TeeAye",
+    "TeaEye"
+   ],
+   "canon": [
+    [
+     "Her story",
+     "A boy of the transition house, in black. Stored as black sand, made into a weapon, then found inside people as implants — and from there he wants to become a person."
+    ],
+    [
+     "Where it goes",
+     "He grows up off the page and becomes a neuro-orthopedic surgeon: from the metal in a spine to the one who places it."
+    ]
+   ],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -3062,7 +3365,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Vee",
    "mentor": "Nils Sefström",
    "mass": 50.9415,
    "melt": 2183.15,
@@ -3093,7 +3396,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Vanadium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -3105,9 +3408,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -3118,7 +3420,16 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Vee",
+    "Vea",
+    "Vi"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -3175,7 +3486,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "CeeArr",
    "mentor": "Louis Vauquelin",
    "mass": 51.9961,
    "melt": 2180.15,
@@ -3207,7 +3518,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Chromium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -3219,9 +3530,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -3230,7 +3540,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeArr",
+    "CeeAr",
+    "CeeAre",
+    "SeeArr",
+    "SeeAr"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -3283,7 +3604,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Emen",
    "mentor": "Johann Gahn",
    "mass": 54.938044,
    "melt": 1519.15,
@@ -3316,7 +3637,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Manganese",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -3328,9 +3649,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -3339,7 +3659,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Emen",
+    "Emenn",
+    "Emehn",
+    "Emmen",
+    "Emmenn"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -3451,7 +3782,7 @@
      "Electric arc from scrap is the largest single source"
     ]
    ],
-   "character": "",
+   "character": "Effee",
    "mentor": "Tubal-cain → Henry Bessemer",
    "mass": 55.845,
    "melt": 1811.15,
@@ -3600,7 +3931,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Iron",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": true,
@@ -3612,14 +3943,45 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 8,
+   "slots_filled": 9,
    "slots_open": [
-    "character",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Effee",
+    "Efee",
+    "Efie",
+    "Efy",
+    "Effie"
+   ],
+   "canon": [
+    [
+     "Her work",
+     "She is the thing other things are made of. Tools. Bridges. Blood."
+    ],
+    [
+     "Her gesture",
+     "She has held the hand of younger elements at hard moments. That is the defining gesture."
+    ],
+    [
+     "Her eyes",
+     "They shine and focus with the steadiness of five thousand years."
+    ],
+    [
+     "Her music",
+     "Piano, steel guitar strings, drums."
+    ],
+    [
+     "Her words",
+     "Blazing and sparking are hers. No other girl's hair is written that way."
+    ]
+   ],
+   "instrument": "Piano, steel guitar strings, drums.",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -3666,7 +4028,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "CeeOh",
    "mentor": "George Brandt",
    "mass": 58.933194,
    "melt": 1768.15,
@@ -3698,7 +4060,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Cobalt",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -3710,9 +4072,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -3721,7 +4082,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeOh",
+    "CeeO",
+    "CeeOwe",
+    "SeeOh",
+    "SeeO"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -3768,7 +4140,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Eneye",
    "mentor": "Axel Cronstedt",
    "mass": 58.6934,
    "melt": 1728.15,
@@ -3799,7 +4171,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Nickel",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -3811,9 +4183,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -3822,7 +4193,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Eneye",
+    "Enigh",
+    "Enaye",
+    "Enneye",
+    "Ennigh"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -3916,7 +4298,7 @@
     -69.07
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "CeeYu",
    "mentor": "The man on the Similaun glacier → Cyprus",
    "mass": 63.546,
    "melt": 1357.77,
@@ -3999,7 +4381,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Copper",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": true,
@@ -4011,15 +4393,25 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 7,
+   "slots_filled": 8,
    "slots_open": [
-    "character",
     "source",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeYu",
+    "CeeYou",
+    "CeeYew",
+    "SeeYu",
+    "SeeYou"
+   ],
+   "canon": [],
+   "instrument": "Brass, with zinc.",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -4096,7 +4488,7 @@
     108.9
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "ZeeEn",
    "mentor": "The distillers of Zawar → Andreas Sigismund Marggraf",
    "mass": 65.38,
    "melt": 692.6769999999999,
@@ -4148,7 +4540,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Zinc",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4160,16 +4552,26 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 6,
+   "slots_filled": 7,
    "slots_open": [
-    "character",
     "uses",
     "source",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "ZeeEn",
+    "ZeeEnn",
+    "ZeeEhn",
+    "ZeaEn",
+    "ZeaEnn"
+   ],
+   "canon": [],
+   "instrument": "Brass, with copper.",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -4213,7 +4615,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "JeeAy",
    "mentor": "Paul Émile Lecoq de Boisbaudran",
    "mass": 69.723,
    "melt": 302.91459999999995,
@@ -4244,7 +4646,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Gallium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4256,9 +4658,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -4269,7 +4670,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "JeeAy",
+    "Jeeyay",
+    "JeeAye",
+    "JeeEigh",
+    "GeeAy"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -4312,7 +4724,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "JeeEe",
    "mentor": "Clemens Winkler",
    "mass": 72.63,
    "melt": 1211.4,
@@ -4345,7 +4757,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Germanium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4357,9 +4769,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -4370,7 +4781,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "JeeEe",
+    "JeeIe",
+    "JeeY",
+    "GeeEe",
+    "GeeIe"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -4465,7 +4887,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "AyEss",
    "mentor": "The arsenical bronze smiths → Mathieu Orfila",
    "mass": 74.921595,
    "melt": 1090.15,
@@ -4529,7 +4951,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Arsenic",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4541,9 +4963,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -4551,7 +4972,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "AyEss",
+    "Ayess",
+    "AyEs",
+    "AyEsse",
+    "AyeEss"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -4613,7 +5045,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Essee",
    "mentor": "Jöns Berzelius",
    "mass": 78.971,
    "melt": null,
@@ -4647,7 +5079,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Selenium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4659,9 +5091,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -4670,7 +5101,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Essee",
+    "Essie",
+    "Essy",
+    "Esee",
+    "Esie"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -4725,7 +5167,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "BeeArr",
    "mentor": "Antoine J. Balard",
    "mass": 79.904,
    "melt": 265.95,
@@ -4759,7 +5201,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Bromine",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4771,9 +5213,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -4782,7 +5223,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "BeeArr",
+    "Beearr",
+    "BeeAr",
+    "BeeAre",
+    "BeaArr"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": true,
+   "cape": false
   },
   {
    "ancient": false,
@@ -4823,7 +5275,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "KayArr",
    "mentor": "Sir William Ramsey, M.W. Travers",
    "mass": 83.798,
    "melt": 115.77999999999997,
@@ -4854,7 +5306,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Krypton",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4866,9 +5318,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -4879,7 +5330,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "KayArr",
+    "Kayarr",
+    "KayAr",
+    "KayAre",
+    "KaeArr"
+   ],
+   "canon": [],
+   "instrument": "Electrical discharge — each line in her spectrum is a note.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -4926,7 +5388,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Arbee",
    "mentor": "R. Bunsen, G. Kirchoff",
    "mass": 85.4678,
    "melt": 312.45,
@@ -4957,7 +5419,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Rubidium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -4969,9 +5431,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -4982,7 +5443,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Arbee",
+    "Arbie",
+    "Arbea",
+    "Arby",
+    "Arrbee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5026,7 +5498,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Essarr",
    "mentor": "A. Crawford",
    "mass": 87.62,
    "melt": 1050.15,
@@ -5057,7 +5529,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Strontium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -5069,9 +5541,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -5082,7 +5553,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Essarr",
+    "Essar",
+    "Essare",
+    "Esarr",
+    "Esar"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5127,7 +5609,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Why",
    "mentor": "Johann Gadolin",
    "mass": 88.90584,
    "melt": 1795.15,
@@ -5158,7 +5640,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Yttrium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": false,
     "mentor": true,
     "uses": false,
@@ -5170,9 +5652,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 1,
+   "slots_filled": 2,
    "slots_open": [
-    "character",
     "hair",
     "uses",
     "places",
@@ -5184,7 +5665,16 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Why",
+    "Wye",
+    "Wy"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5228,7 +5718,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "ZeeArr",
    "mentor": "Martin Klaproth",
    "mass": 91.224,
    "melt": 2127.15,
@@ -5259,7 +5749,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Zirconium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -5271,9 +5761,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -5284,7 +5773,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "ZeeArr",
+    "ZeeAr",
+    "ZeeAre",
+    "ZeaArr",
+    "ZeaAr"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5322,7 +5822,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Enbee",
    "mentor": "Charles Hatchet",
    "mass": 92.90637,
    "melt": 2750.15,
@@ -5353,7 +5853,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Niobium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -5365,9 +5865,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -5378,7 +5877,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Enbee",
+    "Enbea",
+    "Enby",
+    "Ennbee",
+    "Ennbea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5438,7 +5948,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Emoh",
    "mentor": "Carl Wilhelm Scheele",
    "mass": 95.95,
    "melt": 2895.15,
@@ -5470,7 +5980,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Molybdenum",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -5482,9 +5992,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -5494,7 +6003,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Emoh",
+    "Emo",
+    "Emowe",
+    "Emmoh",
+    "Emmo"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5545,7 +6065,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Teecee",
    "mentor": "Carlo Perrier, Émillo Segrè",
    "mass": 97.90721,
    "melt": 2430.15,
@@ -5577,7 +6097,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Technetium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -5589,9 +6109,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -5602,7 +6121,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Teecee",
+    "Teesee",
+    "Teesea",
+    "Teacee",
+    "Teasee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5640,7 +6170,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aryu",
    "mentor": "Karl Klaus",
    "mass": 101.07,
    "melt": 2606.15,
@@ -5672,7 +6202,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Ruthenium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": false,
     "mentor": true,
     "uses": false,
@@ -5684,9 +6214,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 1,
+   "slots_filled": 2,
    "slots_open": [
-    "character",
     "hair",
     "uses",
     "places",
@@ -5698,7 +6227,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aryu",
+    "Aryou",
+    "Aryew",
+    "Arryu",
+    "Arryou"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5740,7 +6280,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Araitch",
    "mentor": "William Wollaston",
    "mass": 102.9055,
    "melt": 2236.15,
@@ -5771,7 +6311,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Rhodium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -5783,9 +6323,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -5796,7 +6335,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Araitch",
+    "Areytch",
+    "Araich",
+    "Arraitch",
+    "Arreytch"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -5840,7 +6390,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Peadee",
    "mentor": "William Wollaston",
    "mass": 106.42,
    "melt": 1827.9499999999998,
@@ -5872,7 +6422,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Palladium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -5884,9 +6434,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -5897,7 +6446,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Peadee",
+    "Peadea",
+    "Peadi",
+    "Peedee",
+    "Peedea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -5982,7 +6542,7 @@
     -102.5
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "Ayjee",
    "mentor": "The slaves of Laurion → The Worshipful Company of Goldsmiths",
    "mass": 107.8682,
    "melt": 1234.9299999999998,
@@ -6044,7 +6604,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Silver",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -6056,9 +6616,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "source",
     "condition",
@@ -6066,7 +6625,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Ayjee",
+    "Aygee",
+    "Ayji",
+    "Ayejee",
+    "Ayegee"
+   ],
+   "canon": [],
+   "instrument": "Bells.",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -6127,7 +6697,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Ceedee",
    "mentor": "Fredrich Stromeyer",
    "mass": 112.414,
    "melt": 594.219,
@@ -6158,7 +6728,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Cadmium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -6170,9 +6740,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -6181,7 +6750,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Ceedee",
+    "Ceedea",
+    "Ceedi",
+    "Seedee",
+    "Seedea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -6224,7 +6804,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "EyeEn",
    "mentor": "Ferdinand Reich, T. Richter",
    "mass": 114.818,
    "melt": 429.7485,
@@ -6255,7 +6835,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Indium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -6267,9 +6847,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -6280,7 +6859,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "EyeEn",
+    "EyeEnn",
+    "EyeEhn",
+    "AyeEn",
+    "AyeEnn"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -6346,7 +6936,7 @@
     106.1
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "Essen",
    "mentor": "Pytheas of Massalia → The Cornish stannaries",
    "mass": 118.71,
    "melt": null,
@@ -6421,7 +7011,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Tin",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": true,
@@ -6433,16 +7023,26 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 6,
+   "slots_filled": 7,
    "slots_open": [
-    "character",
     "source",
     "people",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Essen",
+    "Essenn",
+    "Essehn",
+    "Esen",
+    "Esenn"
+   ],
+   "canon": [],
+   "instrument": "Whistles.",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -6493,7 +7093,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Essbee",
    "mentor": "The eye-painters of Egypt → Basil Valentine",
    "mass": 121.76,
    "melt": 903.778,
@@ -6547,7 +7147,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Antimony",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -6559,9 +7159,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -6571,7 +7170,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Essbee",
+    "Essbea",
+    "Essby",
+    "Esbee",
+    "Esbea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -6613,7 +7223,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "TeeEe",
    "mentor": "Franz Müller von Reichenstein",
    "mass": 127.6,
    "melt": 722.66,
@@ -6647,7 +7257,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Tellurium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -6659,9 +7269,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -6672,7 +7281,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "TeeEe",
+    "Teahe",
+    "TeeIe",
+    "TeeY",
+    "TeaEe"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -6755,7 +7375,7 @@
     -69.2
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "Eye",
    "mentor": "Bernard Courtois",
    "mass": 126.90447,
    "melt": 386.84999999999997,
@@ -6790,7 +7410,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Iodine",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -6802,16 +7422,26 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 6,
+   "slots_filled": 7,
    "slots_open": [
-    "character",
     "uses",
     "source",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Eye",
+    "Aigh",
+    "Aye",
+    "Ai",
+    "Igh"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": true,
+   "cape": false
   },
   {
    "ancient": false,
@@ -6855,7 +7485,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Ecksee",
    "mentor": "Sir William Ramsay; M. W. Travers",
    "mass": 131.293,
    "melt": 161.39999999999998,
@@ -6888,7 +7518,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Xenon",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -6900,9 +7530,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -6913,7 +7542,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Ecksee",
+    "Ecksie",
+    "Ecksy",
+    "Exee",
+    "Exie"
+   ],
+   "canon": [],
+   "instrument": "Electrical discharge — each line in her spectrum is a note.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -6973,7 +7613,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "CeeEss",
    "mentor": "Gustov Kirchoff, Robert Bunsen",
    "mass": 132.90545196,
    "melt": 301.65,
@@ -7004,7 +7644,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Cesium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7016,9 +7656,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7029,7 +7668,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeEss",
+    "SiEss",
+    "CeeEs",
+    "CeeEsse",
+    "SeeEss"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7073,7 +7723,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "BeeAy",
    "mentor": "Sir Humphrey Davy",
    "mass": 137.327,
    "melt": 1000.15,
@@ -7104,7 +7754,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Barium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7116,9 +7766,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7128,7 +7777,17 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "BeeAy",
+    "Beeay",
+    "BeeEigh",
+    "BeaAy"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7166,7 +7825,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Elay",
    "mentor": "Carl Mosander",
    "mass": 138.90547,
    "melt": 1193.15,
@@ -7197,7 +7856,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Lanthanum",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7209,9 +7868,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7222,7 +7880,17 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Elay",
+    "Eleigh",
+    "Ellay",
+    "Ellaye"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7260,7 +7928,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "CeeEe",
    "mentor": "W. von Hisinger, J. Berzelius, M. Klaproth",
    "mass": 140.116,
    "melt": 1072.15,
@@ -7292,7 +7960,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Cerium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7304,9 +7972,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7317,7 +7984,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeEe",
+    "CeeIe",
+    "CeeY",
+    "SeeEe",
+    "SeeIe"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7355,7 +8033,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "PeaArr",
    "mentor": "C.F. Aver von Welsbach",
    "mass": 140.90766,
    "melt": 1204.15,
@@ -7386,7 +8064,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Praseodymium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7398,9 +8076,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7411,7 +8088,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "PeaArr",
+    "PeaAr",
+    "PeaAre",
+    "PeeArr",
+    "PeeAr"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7472,7 +8160,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Endee",
    "mentor": "C.F. Aver von Welsbach",
    "mass": 144.242,
    "melt": 1289.15,
@@ -7503,7 +8191,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Neodymium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7515,9 +8203,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7527,7 +8214,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Endee",
+    "Endea",
+    "Endi",
+    "Enndee",
+    "Enndea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7565,7 +8263,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "PeaEm",
    "mentor": "J.A. Marinsky, L.E. Glendenin, C.D. Coryell",
    "mass": 144.91276,
    "melt": 1315.15,
@@ -7596,7 +8294,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Promethium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7608,9 +8306,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7621,7 +8318,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "PeaEm",
+    "PeaEmm",
+    "PeaEhm",
+    "PeeEm",
+    "PeeEmm"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7659,7 +8367,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Essem",
    "mentor": "Paul Émile Lecoq de Boisbaudran",
    "mass": 150.36,
    "melt": 1345.15,
@@ -7690,7 +8398,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Samarium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7702,9 +8410,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7715,7 +8422,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Essem",
+    "Essemm",
+    "Essehm",
+    "Esem",
+    "Esemm"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7757,7 +8475,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "EYu",
    "mentor": "Eugène Demarçay",
    "mass": 151.964,
    "melt": 1095.15,
@@ -7789,7 +8507,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Europium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7801,9 +8519,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7814,7 +8531,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "EYu",
+    "EYou",
+    "EYew",
+    "EeYu",
+    "EeYou"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7857,7 +8585,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Jeedee",
    "mentor": "Jean de Marignac",
    "mass": 157.25,
    "melt": 1586.15,
@@ -7888,7 +8616,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Gadolinium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7900,9 +8628,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -7913,7 +8640,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Jeedee",
+    "Jeedea",
+    "Jeedi",
+    "Geedee",
+    "Geedea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -7951,7 +8689,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Teebee",
    "mentor": "Carl Mosander",
    "mass": 158.92535,
    "melt": 1632.15,
@@ -7982,7 +8720,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Terbium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -7994,9 +8732,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8007,7 +8744,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Teebee",
+    "Teebea",
+    "Teeby",
+    "Teabee",
+    "Teabea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8045,7 +8793,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Deewhy",
    "mentor": "Paul Émile Lecoq de Boisbaudran",
    "mass": 162.5,
    "melt": 1685.15,
@@ -8076,7 +8824,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Dysprosium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8088,9 +8836,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8101,7 +8848,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Deewhy",
+    "Deewye",
+    "Deawhy",
+    "Deawye",
+    "Dewhy"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8139,7 +8897,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aitchoh",
    "mentor": "J.L. Soret",
    "mass": 164.93033,
    "melt": 1745.15,
@@ -8170,7 +8928,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Holmium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8182,9 +8940,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8195,7 +8952,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aitchoh",
+    "Aitcho",
+    "Aitchowe",
+    "Eytchoh",
+    "Eytcho"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8233,7 +9001,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "EArr",
    "mentor": "Carl Mosander",
    "mass": 167.259,
    "melt": 1802.15,
@@ -8264,7 +9032,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Erbium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8276,9 +9044,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8289,7 +9056,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "EArr",
+    "EAr",
+    "EAre",
+    "EeArr",
+    "EeAr"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8327,7 +9105,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "TeeEm",
    "mentor": "Per Theodor Cleve",
    "mass": 168.93422,
    "melt": 1818.15,
@@ -8358,7 +9136,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Thulium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8370,9 +9148,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8383,7 +9160,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "TeeEm",
+    "TeeEmm",
+    "TeeEhm",
+    "TeaEm",
+    "TeaEmm"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8421,7 +9209,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Whybee",
    "mentor": "Jean de Marignac",
    "mass": 173.045,
    "melt": 1097.15,
@@ -8452,7 +9240,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Ytterbium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8464,9 +9252,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8477,7 +9264,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Whybee",
+    "Whybea",
+    "Whyby",
+    "Wyebee",
+    "Wyebea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8515,7 +9313,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Elyu",
    "mentor": "Georges Urbain",
    "mass": 174.9668,
    "melt": 1936.15,
@@ -8546,7 +9344,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Lutetium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8558,9 +9356,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8571,7 +9368,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Elyu",
+    "Elyou",
+    "Elyew",
+    "Ellyu",
+    "Ellyou"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8612,7 +9420,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aitchef",
    "mentor": "Dirk Coster, Georg von Hevesy",
    "mass": 178.49,
    "melt": 2506.15,
@@ -8643,7 +9451,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Hafnium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8655,9 +9463,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8668,7 +9475,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aitchef",
+    "Aitcheff",
+    "Aitcheph",
+    "Eytchef",
+    "Eytcheff"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8711,7 +9529,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "TeeAy",
    "mentor": "Anders Ekeberg",
    "mass": 180.94788,
    "melt": 3290.15,
@@ -8742,7 +9560,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Tantalum",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8754,9 +9572,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8767,7 +9584,17 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "TeeAy",
+    "TeeEigh",
+    "TeaAy",
+    "TeaAye"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8814,7 +9641,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Doubleyu",
    "mentor": "Fausto and Juan José de Elhuyar",
    "mass": 183.84,
    "melt": 3687.15,
@@ -8846,7 +9673,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Tungsten",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8858,9 +9685,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8869,7 +9695,16 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Doubleyu",
+    "Doubleyou",
+    "Dubbleyu"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -8910,7 +9745,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aree",
    "mentor": "Walter Noddack, Ida Tacke, Otto Berg",
    "mass": 186.207,
    "melt": 3458.15,
@@ -8941,7 +9776,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Rhenium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -8953,9 +9788,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -8966,7 +9800,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aree",
+    "Arie",
+    "Ary",
+    "Arree",
+    "Arrie"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -9008,7 +9853,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Ohess",
    "mentor": "Smithson Tenant",
    "mass": 190.23,
    "melt": 3306.15,
@@ -9039,7 +9884,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Osmium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -9051,9 +9896,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -9064,7 +9908,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Ohess",
+    "Ohes",
+    "Ohesse",
+    "OEss",
+    "OEs"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -9115,7 +9970,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "EyeArr",
    "mentor": "S.Tenant, A.F.Fourcory, L.N.Vauquelin, H.V.Collet-Descoltils",
    "mass": 192.217,
    "melt": 2719.15,
@@ -9147,7 +10002,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Iridium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -9159,9 +10014,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -9172,7 +10026,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "EyeArr",
+    "EyeAr",
+    "EyeAre",
+    "AyeArr",
+    "AyeAr"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -9226,7 +10091,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Peatee",
    "mentor": "Julius Scaliger",
    "mass": 195.084,
    "melt": 2041.35,
@@ -9258,7 +10123,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Platinum",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -9270,9 +10135,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -9281,7 +10145,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Peatee",
+    "Peatea",
+    "Peate",
+    "Peetee",
+    "Peetea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -9350,7 +10225,7 @@
     27.9
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "AyYu",
    "mentor": "The surveyor of the Turin Papyrus → Croesus",
    "mass": 196.966569,
    "melt": 1337.33,
@@ -9412,7 +10287,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Gold",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -9424,9 +10299,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 5,
+   "slots_filled": 6,
    "slots_open": [
-    "character",
     "uses",
     "source",
     "people",
@@ -9434,7 +10308,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "AyYu",
+    "AyYou",
+    "AyYew",
+    "AyeYu",
+    "AyeYou"
+   ],
+   "canon": [],
+   "instrument": "She does not make much music.",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -9635,7 +10520,27 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aitchjee",
+    "Aitchgee",
+    "Aitchji",
+    "Eytchjee",
+    "Eytchgee"
+   ],
+   "canon": [
+    [
+     "How she moves",
+     "She swims rather than walks. Her hair flows like liquid at all times."
+    ],
+    [
+     "Her dress",
+     "She changes uniforms by mood and by century. Her hat is her anchor to girl-shape."
+    ]
+   ],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -9678,7 +10583,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "TeeElle",
    "mentor": "Sir William Crookes",
    "mass": 204.38,
    "melt": 577.15,
@@ -9710,7 +10615,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Thallium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -9722,9 +10627,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -9734,7 +10638,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "TeeElle",
+    "Tielle",
+    "TeeEl",
+    "TeeEll",
+    "TeaElle"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -9842,7 +10757,7 @@
     141.45
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "Peabee",
    "mentor": "The plumbarii of Rome → Vitruvius",
    "mass": 207.2,
    "melt": 600.612,
@@ -9895,7 +10810,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Lead",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -9907,16 +10822,26 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 6,
+   "slots_filled": 7,
    "slots_open": [
-    "character",
     "uses",
     "source",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Peabee",
+    "Peabea",
+    "Peaby",
+    "Peebee",
+    "Peebea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": true,
@@ -9960,7 +10885,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "BeeEye",
    "mentor": "The Saxon miners of the Erzgebirge → Georgius Agricola",
    "mass": 208.9804,
    "melt": 544.5519999999999,
@@ -10012,7 +10937,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Bismuth",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10024,9 +10949,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10036,7 +10960,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "BeeEye",
+    "Beeyigh",
+    "BeeIgh",
+    "BeeAye",
+    "BeaEye"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10079,7 +11014,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "PeaOh",
    "mentor": "Pierre and Marie Curie",
    "mass": 209.0,
    "melt": 527.15,
@@ -10112,7 +11047,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Polonium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10124,9 +11059,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 3,
+   "slots_filled": 4,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10136,7 +11070,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "PeaOh",
+    "Peaoh",
+    "PeaO",
+    "PeaOwe",
+    "PeeOh"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10181,7 +11126,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aytee",
    "mentor": "D.R.Corson, K.R.MacKenzie, E.Segré",
    "mass": 210.0,
    "melt": 575.15,
@@ -10213,7 +11158,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Astatine",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10225,9 +11170,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10238,7 +11182,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aytee",
+    "Aytea",
+    "Ayte",
+    "Ayetee",
+    "Ayetea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": true,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10281,7 +11236,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aren",
    "mentor": "Fredrich Ernst Dorn",
    "mass": 222.0,
    "melt": 202.14999999999998,
@@ -10310,7 +11265,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Radon",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10322,9 +11277,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10335,7 +11289,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aren",
+    "Arenn",
+    "Arehn",
+    "Arren",
+    "Arrenn"
+   ],
+   "canon": [],
+   "instrument": "Electrical discharge — each line in her spectrum is a note.",
+   "wings": false,
+   "cape": true
   },
   {
    "ancient": false,
@@ -10373,7 +11338,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Efarr",
    "mentor": "Marguerite Derey",
    "mass": 223.0,
    "melt": 294.15,
@@ -10404,7 +11369,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Francium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10416,9 +11381,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10429,7 +11393,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Efarr",
+    "Efar",
+    "Efare",
+    "Effarr",
+    "Effar"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10528,7 +11503,7 @@
     null
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "Aray",
    "mentor": "Pierre and Marie Curie",
    "mass": 226.0,
    "melt": 969.15,
@@ -10570,7 +11545,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Radium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": true,
@@ -10582,15 +11557,25 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 7,
+   "slots_filled": 8,
    "slots_open": [
-    "character",
     "source",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aray",
+    "Araye",
+    "Areigh",
+    "Array",
+    "Arraye"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10628,7 +11613,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aycee",
    "mentor": "André Debierne",
    "mass": 227.0,
    "melt": 1323.15,
@@ -10659,7 +11644,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Actinium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10671,9 +11656,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10684,7 +11668,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aycee",
+    "Aysee",
+    "Aysea",
+    "Ayecee",
+    "Ayesee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10735,7 +11730,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "TeeAitch",
    "mentor": "Jöns Berzelius",
    "mass": 232.0377,
    "melt": 2023.15,
@@ -10766,7 +11761,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Thorium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10778,9 +11773,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10791,7 +11785,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "TeeAitch",
+    "TeeEytch",
+    "TeeAich",
+    "TeaAitch",
+    "TeaEytch"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10829,7 +11834,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "PeaAy",
    "mentor": "Fredrich Soddy, John Cranston, Otto Hahn, Lise Meitner",
    "mass": 231.03588,
    "melt": 1845.15,
@@ -10860,7 +11865,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Protactinium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -10872,9 +11877,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -10885,7 +11889,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "PeaAy",
+    "PeaAye",
+    "PeaEigh",
+    "PeeAy",
+    "PeeAye"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -10991,7 +12006,7 @@
     68.0
    ],
    "source_timeline": [],
-   "character": "",
+   "character": "Yu",
    "mentor": "Martin Klaproth",
    "mass": 238.02891,
    "melt": 1408.15,
@@ -11022,7 +12037,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Uranium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11034,16 +12049,25 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 6,
+   "slots_filled": 7,
    "slots_open": [
-    "character",
     "uses",
     "source",
     "bases",
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Yu",
+    "You",
+    "Yew",
+    "Ewe"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11081,7 +12105,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Enpy",
    "mentor": "E.M. McMillan, P.H. Abelson",
    "mass": 237.0,
    "melt": 917.15,
@@ -11112,7 +12136,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Neptunium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11124,9 +12148,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -11137,7 +12160,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Enpy",
+    "Enpea",
+    "Enpee",
+    "Enpe",
+    "Ennpea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11198,7 +12232,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "PeaYu",
    "mentor": "G.T.Seaborg, J.W.Kennedy, E.M.McMillan, A.C.Wohl",
    "mass": 244.0,
    "melt": 913.15,
@@ -11229,7 +12263,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Plutonium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11241,9 +12275,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 4,
+   "slots_filled": 5,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -11252,7 +12285,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "PeaYu",
+    "PeaYou",
+    "PeaYew",
+    "PeeYu",
+    "PeeYou"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11294,7 +12338,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "AyEm",
    "mentor": "G.T.Seaborg, R.A.James, L.O.Morgan, A.Ghiorso",
    "mass": 243.0,
    "melt": 1449.15,
@@ -11325,7 +12369,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Americium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11337,9 +12381,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -11350,7 +12393,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "AyEm",
+    "AyEmm",
+    "AyEhm",
+    "AyeEm",
+    "AyeEmm"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11388,7 +12442,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "CeeEm",
    "mentor": "G.T.Seaborg, R.A.James, A.Ghiorso",
    "mass": 247.0,
    "melt": 1618.15,
@@ -11419,7 +12473,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Curium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11431,9 +12485,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -11444,7 +12497,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeEm",
+    "CeeEmm",
+    "CeeEhm",
+    "SeeEm",
+    "SeeEmm"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11482,7 +12546,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Beekay",
    "mentor": "G.T.Seaborg, S.G.Tompson, A.Ghiorso",
    "mass": 247.0,
    "melt": 1259.15,
@@ -11513,7 +12577,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Berkelium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": false,
     "mentor": true,
     "uses": false,
@@ -11525,9 +12589,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 1,
+   "slots_filled": 2,
    "slots_open": [
-    "character",
     "hair",
     "uses",
     "places",
@@ -11539,7 +12602,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Beekay",
+    "Beekae",
+    "Beekai",
+    "Beakay",
+    "Beakae"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11577,7 +12651,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "CeeEf",
    "mentor": "G.T.Seaborg, S.G.Tompson, A.Ghiorso, K.Street Jr.",
    "mass": 251.0,
    "melt": 1173.15,
@@ -11608,7 +12682,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Californium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": false,
     "mentor": true,
     "uses": false,
@@ -11620,9 +12694,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 1,
+   "slots_filled": 2,
    "slots_open": [
-    "character",
     "hair",
     "uses",
     "places",
@@ -11634,7 +12707,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeEf",
+    "CeeEff",
+    "CeeEph",
+    "SeeEf",
+    "SeeEff"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11672,7 +12756,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "EEss",
    "mentor": "Argonne, Los Alamos, U of Calif",
    "mass": 252.0,
    "melt": 1133.15,
@@ -11703,7 +12787,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Einsteinium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11715,9 +12799,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -11728,7 +12811,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "EEss",
+    "EEs",
+    "EEsse",
+    "EeEss",
+    "EeEs"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11766,7 +12860,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Efem",
    "mentor": "Argonne, Los Alamos, U of Calif",
    "mass": 257.0,
    "melt": 1800.15,
@@ -11797,7 +12891,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Fermium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11809,9 +12903,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -11822,7 +12915,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Efem",
+    "Efemm",
+    "Efehm",
+    "Effem",
+    "Effemm"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11860,7 +12964,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Emdee",
    "mentor": "G.T.Seaborg, S.G.Tompson, A.Ghiorso, K.Street Jr.",
    "mass": 258.0,
    "melt": 1100.15,
@@ -11891,7 +12995,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Mendelevium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11903,9 +13007,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -11916,7 +13019,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Emdee",
+    "Emdea",
+    "Emdi",
+    "Emmdee",
+    "Emmdea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -11954,7 +13068,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Enoh",
    "mentor": "Nobel Institute for Physics",
    "mass": 259.0,
    "melt": 1100.15,
@@ -11985,7 +13099,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Nobelium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -11997,9 +13111,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12010,7 +13123,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Enoh",
+    "Eno",
+    "Enowe",
+    "Ennoh",
+    "Enno"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12048,7 +13172,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Elarr",
    "mentor": "A.Ghiorso, T.Sikkeland, A.E.Larsh, R.M.Latimer",
    "mass": 262.0,
    "melt": 1900.15,
@@ -12079,7 +13203,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Lawrencium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12091,9 +13215,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12104,7 +13227,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Elarr",
+    "Elar",
+    "Elare",
+    "Ellarr",
+    "Ellar"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12142,7 +13276,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aref",
    "mentor": "A. Ghiorso, et al",
    "mass": 267.0,
    "melt": null,
@@ -12173,7 +13307,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Rutherfordium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12185,9 +13319,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12198,7 +13331,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aref",
+    "Areff",
+    "Areph",
+    "Arref",
+    "Arreff"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12236,7 +13380,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Deebee",
    "mentor": "A. Ghiorso, et al",
    "mass": 268.0,
    "melt": null,
@@ -12265,7 +13409,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Dubnium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12277,9 +13421,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12290,7 +13433,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Deebee",
+    "Deebea",
+    "Deeby",
+    "Deabee",
+    "Deabea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12328,7 +13482,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Essjee",
    "mentor": "Soviet Nuclear Research/ U. of Cal at Berkeley",
    "mass": 271.0,
    "melt": null,
@@ -12357,7 +13511,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Seaborgium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12369,9 +13523,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12382,7 +13535,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Essjee",
+    "Essgee",
+    "Essji",
+    "Esjee",
+    "Esgee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12420,7 +13584,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "BeeAitch",
    "mentor": "Heavy Ion Research Laboratory (HIRL)",
    "mass": 274.0,
    "melt": null,
@@ -12449,7 +13613,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Bohrium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12461,9 +13625,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12474,7 +13637,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "BeeAitch",
+    "BeeEytch",
+    "BeeAich",
+    "BeaAitch",
+    "BeaEytch"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12512,7 +13686,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Aitchess",
    "mentor": "Heavy Ion Research Laboratory (HIRL)",
    "mass": 269.0,
    "melt": null,
@@ -12541,7 +13715,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Hassium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12553,9 +13727,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12566,7 +13739,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Aitchess",
+    "Aitches",
+    "Aitchesse",
+    "Eytchess",
+    "Eytches"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12604,7 +13788,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Emtee",
    "mentor": "Heavy Ion Research Laboratory (HIRL)",
    "mass": 276.0,
    "melt": null,
@@ -12633,7 +13817,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Meitnerium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12645,9 +13829,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12658,7 +13841,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Emtee",
+    "Emtea",
+    "Emte",
+    "Emmtee",
+    "Emmtea"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12696,7 +13890,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "DeeEss",
    "mentor": "Heavy Ion Research Laboratory (HIRL)",
    "mass": 281.0,
    "melt": null,
@@ -12725,7 +13919,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Darmstadtium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12737,9 +13931,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12750,7 +13943,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "DeeEss",
+    "DeeEs",
+    "DeeEsse",
+    "DeaEss",
+    "DeaEs"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12788,7 +13992,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Arjee",
    "mentor": "Heavy Ion Research Laboratory (HIRL)",
    "mass": 281.0,
    "melt": null,
@@ -12817,7 +14021,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Roentgenium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12829,9 +14033,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12842,7 +14045,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Arjee",
+    "Argee",
+    "Arji",
+    "Arrjee",
+    "Arrgee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12880,7 +14094,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "CeeEn",
    "mentor": "GSI Helmholtz Centre for Heavy Ion Research",
    "mass": 285.0,
    "melt": null,
@@ -12909,7 +14123,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Copernicium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -12921,9 +14135,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -12934,7 +14147,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "CeeEn",
+    "CeeEnn",
+    "CeeEhn",
+    "SeeEn",
+    "SeeEnn"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -12972,7 +14196,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Enaitch",
    "mentor": "RIKEN",
    "mass": 286.0,
    "melt": null,
@@ -13001,7 +14225,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Nihonium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -13013,9 +14237,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -13026,7 +14249,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Enaitch",
+    "Eneych",
+    "Eneytch",
+    "Enaich",
+    "Ennaitch"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -13064,7 +14298,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Efelle",
    "mentor": "Joint Institute for Nuclear Research",
    "mass": 289.0,
    "melt": null,
@@ -13093,7 +14327,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Flerovium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -13105,9 +14339,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -13118,7 +14351,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Efelle",
+    "Efel",
+    "Efell",
+    "Effelle",
+    "Effel"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -13156,7 +14400,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Emcee",
    "mentor": "Joint Institute for Nuclear Research",
    "mass": 288.0,
    "melt": null,
@@ -13185,7 +14429,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Moscovium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -13197,9 +14441,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -13210,7 +14453,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Emcee",
+    "Emsee",
+    "Emsea",
+    "Emmcee",
+    "Emmsee"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -13248,7 +14502,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Elvee",
    "mentor": "Lawrence Livermore National Laboratory",
    "mass": 293.0,
    "melt": null,
@@ -13277,7 +14531,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Livermorium",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -13289,9 +14543,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -13302,7 +14555,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Elvee",
+    "Elvie",
+    "Elvi",
+    "Ellvee",
+    "Ellvie"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": false,
+   "cape": false
   },
   {
    "ancient": false,
@@ -13347,7 +14611,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "TeeEss",
    "mentor": "Joint Institute for Nuclear Research/Oak Ridge National Laboratory",
    "mass": 294.0,
    "melt": null,
@@ -13376,7 +14640,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Tennessine",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -13388,9 +14652,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -13401,7 +14664,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "TeeEss",
+    "Teeess",
+    "TeeEs",
+    "TeeEsse",
+    "TeaEss"
+   ],
+   "canon": [],
+   "instrument": "",
+   "wings": true,
+   "cape": false
   },
   {
    "ancient": false,
@@ -13439,7 +14713,7 @@
    "place_nature": null,
    "place_industrial": null,
    "source_timeline": [],
-   "character": "",
+   "character": "Ohjee",
    "mentor": "Joint Institute for Nuclear Research",
    "mass": 294.0,
    "melt": null,
@@ -13468,7 +14742,7 @@
    "mentor_note": "",
    "wiki": "https://en.wikipedia.org/wiki/Oganesson",
    "slots": {
-    "character": false,
+    "character": true,
     "hair": true,
     "mentor": true,
     "uses": false,
@@ -13480,9 +14754,8 @@
     "bases": false,
     "adventures": false
    },
-   "slots_filled": 2,
+   "slots_filled": 3,
    "slots_open": [
-    "character",
     "uses",
     "places",
     "source",
@@ -13493,7 +14766,18 @@
     "adventures"
    ],
    "bases": {},
-   "adventures": {}
+   "adventures": {},
+   "names": [
+    "Ohjee",
+    "Ohgee",
+    "Ohji",
+    "Ojee",
+    "Ogee"
+   ],
+   "canon": [],
+   "instrument": "Electrical discharge — each line in her spectrum is a note.",
+   "wings": false,
+   "cape": false
   }
  ]
 }
